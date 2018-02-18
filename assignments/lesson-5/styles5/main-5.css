@@ -1,0 +1,150 @@
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: courier new;
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer {
+    max-width: 64em;
+    min-width: 300px;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    font-family: bookman old style; 
+    font-size: 40px;
+}
+header h1 {
+    font-family: bookman old style;
+    font-size: 30px;
+    margin: auto;
+}
+header h2 {
+    font-family: bookman old style;
+    font-size: 25px;
+}
+header h3 {
+    font-family: bookman old style;
+    font-size: 20px;
+}
+header img {
+    display: inline;
+    padding: 0;
+    width: 300px;
+    height: auto; 
+}
+#image2 {
+  display: none;
+}
+
+nav{
+    display: inline-block;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #3D59AB;
+    text-align: center;
+    border: .5px solid #000;
+}
+nav ul li {
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    color: #4CAF50;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #4CAF50;
+    color: #FFEC8B; 
+}
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: #FFEC8B;
+}
+
+main {
+     
+}
+main h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin:0;
+    color: #008000;  
+}
+main figure {  
+  float: right;      
+  text-align: center;
+  text-indent: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+main figure img { 
+    width: 100%;
+   
+}
+main .forecast {
+    display: none;
+}
+#image3 {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.highlow {
+    display: flex;
+    justify-content: space-around;
+}
+.condition {
+    display: flex;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+ /* fill the page in the small/phone view */
+    width: auto; 
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+    
+}
+
+footer {
+    font-family: courier;
+    font-size: 12px; 
+    color: #FFEC8B;
+    background-color: #008000;
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+footer aside {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+footer>p {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+   
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

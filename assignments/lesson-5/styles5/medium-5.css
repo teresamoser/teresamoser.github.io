@@ -10,7 +10,7 @@ header img {
     #image2 {
         visibility: visible;
         display: inline-flex;
-        width: auto;
+        width: 19em;
         height: 150px; 
     }
     #image1 {
@@ -21,10 +21,9 @@ header img {
         width: 50%;
         height: 200px; 
         float: left;
-        margin: 10px; 
+        margin: 25px; 
         color: #fff;
-    } 
-header .subheading {}
+    }
     nav {
         background-color: #3D59AB;
         display: flex;
@@ -62,6 +61,16 @@ header .subheading {}
         margin: 0;
         padding: 0;
     }
+    section.condition, section.highlow, section.p {
+        float: right;
+        width: 15%;
+        text-align: center;
+        text-indent: 0;
+        border: none;
+        margin: 0;
+        padding: 0;
+          
+    }
     section.forecast { 
         margin: 0;
         padding: 0;
@@ -69,39 +78,29 @@ header .subheading {}
         background-color: #3D59AB;
         text-align: center;
         color: #FFEC8B;
-        border: 1px solid black; 
+        border: 1px solid #FFEC8B; 
 
      }  /* show the 10-day forecast with the medium view and up */
     table {
         margin: 0;
         padding: 0;
-        width: 48em;
+        min-width: 47em;
         display: inline-table;
-        border: 1px solid black;
-        color: black;  
+        border: 1px solid #FFEC8B;
+        color: #3D59AB;  
     }
     
     tr, td {
-        border: 1px solid black;
+       
+        border: 1px solid #FFEC8B;
         background-color: #FFEC8B;
     }
-  article p.town-article img { width: 62.666%; float: right; }  /* responsive images */
+  article p.town-article img { width: 62.666%; float: right; } 
+    /* responsive images */
 
-}
-footer {
-    font-family: courier;
-    font-size: 12px; 
-    background-color: #008000;
-    width: 96em;
-    text-align: center;
-}
 
-footer aside {
-    margin: 0;
-    padding: 0;   
-}
+    footer {
+        min-width: 63em;
+ }
 
-footer>p {
-    margin: 0;
-    padding: 0;
 }
