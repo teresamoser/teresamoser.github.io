@@ -1,31 +1,30 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    
-   #image2 {
+   
+    nav{
+      display: flex;
+    }
+   header img{
         display: inline-block;
         padding: 0;
-        width: 1030px;
+        width: 100%;
         height: 150px;
     }
-    
+    article p {
+        text-align: justify;
+    }
     section.forecast { 
-
-
-     }  /* show the 10-day forecast with the medium view and up */
+ }  /* show the 10-day forecast with the medium view and up */
     
     table {
-        width: 64em;
+        width: 100%;
     }
     article p.town-article img { 
-        width: 29.333%; 
+        width: 39.333%; 
     }
 
     footer {
-        min-width: 87em;
-    }
-
-    footer aside {
-      
+        width: 100%;
     }
 
     footer>p {

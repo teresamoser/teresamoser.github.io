@@ -16,15 +16,14 @@
     
     <body>
         <header>
-            <img src="images-6/logosmall1.png" id="image1" alt="The site logo" width="510" height="282">
-            <img src="images-6/logobig.png" id="image2" alt="The site logo" width="1532" height="314">
+            <img src="images-6/logobigcolor.png" alt="The site logo">
             <!--<h1>Spot On Weather</h1>
             <div class="subheading">Weather that is spot on every time!</div>-->
         </header>
         <!-- site navigation use placeholder references -->
-        <nav>
+        <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
-                <ul>
+                <ul id="navigation" class="hide">
                     <li><a href="#">Home</a></li>
     	            <li class="active"><a href="#">Franklin</a></li>
     	            <li><a href="#">Greenville</a></li>
@@ -35,7 +34,10 @@
         </nav>
     
     <main>
-        <img src="images-6/sunshine.jpeg" id="image3" alt="Sunshine Weather" width="300" height="199">
+        <!--<img src="images-6/sunshine.jpeg" id="image3" alt="Sunshine Weather" width="300" height="199">using new image in assignment6-->
+        
+        <img srcset="images-6/franklin-small.jpg 300w, images-6/franklin-medium.jpg 500w, images-6/franklin-large.jpg 1000w" alt="franklinpix">
+    
         <h2>Franklin</h2>
       
         <figure>
@@ -110,11 +112,11 @@
                 <br>contact@theurl.com
             </p>
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | Spot On Weather | Feb 8, 2018 <span id="currentdate"></span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &odot; Spot On Weather &odot; <span id="currentdate"></span></p>
     </footer>
 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
+    <script src="scripts-6/hamburger.js"></script>
+    <script src="scripts-6/currentdate.js"></script>
         
     </body>
 </html>
