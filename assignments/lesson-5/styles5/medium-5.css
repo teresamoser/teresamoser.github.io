@@ -23,21 +23,23 @@ header img {
         float: left;
         margin: 25px; 
         color: #fff;
-    }
+        }
+    
     nav {
         background-color: #3D59AB;
         display: flex;
         width: auto;
         height: 47px;
-    }
+        }
 
     nav ul {
-       list-style-type: none;
+        list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #3D59AB;
-    }
+        }
+    
     nav ul li {
         float: left;
     }
@@ -68,9 +70,9 @@ header img {
         text-indent: 0;
         border: none;
         margin: 0;
-        padding: 0;
-          
-    }
+        padding: 0;   
+        }
+    
     section.forecast { 
         margin: 0;
         padding: 0;
@@ -79,8 +81,8 @@ header img {
         text-align: center;
         color: #FFEC8B;
         border: 1px solid #FFEC8B; 
-
-     }  /* show the 10-day forecast with the medium view and up */
+        }  /* show the 10-day forecast with the medium view and up */
+    
     table {
         margin: 0;
         padding: 0;

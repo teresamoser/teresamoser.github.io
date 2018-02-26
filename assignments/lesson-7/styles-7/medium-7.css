@@ -1,6 +1,7 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-  
+    
+
     body header img { width: 100%; }
     
     body { font-size: 18px; }
@@ -10,29 +11,39 @@
     nav ul.hide { display: none; }
  
    picture img{ 
-        display: inline-block;
-        float: left;
-        max-width:400px;
-        margin: 10px;
-        padding: 0;   
+       float: left;
+        width: 50%;
+        margin: 2px;
+        padding: 2px;   
         }
     
-   main section p {
-        display: inline-block;
+    main section  {
         text-align: center;
-        max-width: 500px;
+        width: auto;
         padding: 0;
-        margin: 5px;
+        margin: 0;
         } 
     
-    main figure {
-        display: inline-block;
-        width: 15%;  
-        }
-
-    section.forecast{ 
-        margin: 0;
+   #image4, figure {
+        float: right;
         padding: 0;
+        margin: 0;
+    }
+
+    
+    #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
+        width: 400px;
+        padding: 5px;
+        margin: 5px;
+        }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    section.forecast{ 
+        margin: .5px;
+        padding: .5px;
         width: 100%;
         display: inline-block;
         background-color: #3D59AB;
@@ -62,23 +73,29 @@
          padding: 5px;
         }
     main article p.town-article img {
-        display: inline-block;
+        display: inline-flex;
         width: 52.666%; 
         } 
     /* responsive images */
 
     footer {
-       max-width: 1000px;
-        }
-    footer aside{
+        display: inline-block;
         text-align: center;
+        width: 100%;
+        }
+    
+    footer aside{
+        display: inline-flex;
+        text-align: center;
+        }
+    
+    footer aside img.left{
+        display: flex;
+        float: left;
+        margin-right: 4em;
+        margin-left: 4em;
+        }
+    footer p{
+        font-size: 16px;
     }
-    #left{
-        vertical-align: middle;
-        margin-bottom: 0.75em;
-        }
-    #right{
-        float: right;
-        padding: 0 20px 20px 0;
-        }
 }

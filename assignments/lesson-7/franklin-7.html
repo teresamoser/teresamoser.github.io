@@ -9,52 +9,53 @@
         <!-- external style references in the proper cascading order -->    
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
         <!-- Google API font reference -->
-        <link href="styles../normalize.css" rel="stylesheet">
+        <link href="styles-7/normalize-7.css" rel="stylesheet">
         <!-- normalize useragent/browser defaults -->
-        <link href="styles-6/main-6.css" rel="stylesheet">    
+        <link href="styles-7/main-7.css" rel="stylesheet">    
         <!-- default styles - small/phone views -->
-        <link href="styles-6/medium-6.css" rel="stylesheet">  
+        <link href="styles-7/medium-7.css" rel="stylesheet">  
         <!-- medium/tablet views -->
-        <link href="styles-6/large-6.css" rel="stylesheet">   
+        <link href="styles-7/large-7.css" rel="stylesheet">   
         <!-- large/wide/desktop views -->    
     </head>
     
     <body>
         <header>
-            <img src="images-6/sunlogo.png" alt="The site logo">
+            <img src="images-7/sunlogo.png" alt="The site logo">
         </header>
         <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
                 <ul id="navigation" class="hide">
                     <li><a href="#">Home</a></li>
-    	            <li class="active"><a href="#">Franklin</a></li>
+    	            <li class="active"><a href="http://127.0.0.1:55504/assignments/lesson-7/franklin-7.html">Franklin</a></li>
     	            <li><a href="#">Greenville</a></li>
                     <li><a href="#">Springfield</a></li>
     	            <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li class="active"><a href="http://127.0.0.1:55504/assignments/lesson-7/gallery-7.html">Gallery</a></li>
                 </ul>		
         </nav>
     <main>
         <picture>
-            <img src="images-6/franklin-small300.jpg 300w" srcset="images-6/franklin-medium500.jpg 500w, images-6/franklin-large1000.jpg 1000w" alt="franklinpix">
+            <img src="images-7/sunshinefields.jpeg" alt="franklinpix">
         </picture>
         
         <h2>Franklin</h2>
         <figure>
             <h3>Sunny</h3>
-            <img src="images-6/mrsun.jpeg" id="image4" alt="Mr. Sun" width="100" height="100">
+            <img src="images-7/mrsun.jpeg" id="image4" alt="Mr. Sun" width="100" height="100">
         </figure>
       
         <section>
                <h3>Weather Condiditions</h3>
                 <div class="highlow">
-                    <p>High: 90&deg;F</p>  
-                    <p>Low: 66&deg;F</p>
+                    <p>High: <span id="high">90</span>&deg;F</p>  
+                    <p>Low: <span id="low">66</span>&deg;F</p>
                 </div>
                 <div class="conditions">
                     <p>Chance of Precipitation: 0%</p> 
-                    <p>Wind Speed: 5 mpg SW</p>
+                    <p>Wind Speed:  <span id="wspeed"> 5 </span>mpg SW</p>
+                    <p>Wind Chill:  <span id="output"></span>&deg;F</p>
                 </div>
         </section> 
       
@@ -96,8 +97,8 @@
       <article>
         <h2>Franklin Heat Wave</h2>	
             <p class="town-article">
-                <img src="images-6/sunglasses.jpeg" alt="sunglasses" width="200" height="200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <img src="images-7/sunglasses.jpeg" alt="sunglasses" width="200" height="200">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
       </article>
     </main>
@@ -105,22 +106,23 @@
     <footer>
         <aside>
             <h2>Spot On Weather</h2>
-            <img src="images-6/sunicon.png" id="image4" alt="Sundot" width="100" height="100" class="left">
+            <img src="images-7/sunicon.png" id="image7" alt="Sundot" width="100" height="100" class="left">
            
-            <p>123 Main St.
+            <p>
+                <br>123 Main St.
                 <br>Franklin, MU 83454
-                <br>(999)999.9999
+                <br>(012)345.6789
                 <br>contact@theurl.com
             </p>
            
-            <img src="images-6/sunicon.png" id="image4" alt="Sundot" width="100" height="100" class="right">
         </aside>
 
-        <p class="footer-bar">&copy;2018 All Rights Reserved  &xodot;  Spot On Weather  &xodot;  <span id="currentdate"></span></p>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
     </footer>
 
-    <script src="scripts-6/hamburger.js"></script>
-    <script src="scripts-6/currentdate.js"></script>
+    <script src="scripts-7/hamburger.js"></script>
+    <script src="scripts-7/currentdate.js"></script>
+    <script src="scripts-7/windchill.js"></script>
         
     </body>
 </html>
