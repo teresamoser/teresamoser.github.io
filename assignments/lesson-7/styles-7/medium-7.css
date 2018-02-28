@@ -36,6 +36,10 @@
         padding: 5px;
         margin: 5px;
         }
+    figcaption{
+        text-align: justify;
+        width: 400px;
+    }
     
     .grid-container{
         display: grid;

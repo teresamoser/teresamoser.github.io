@@ -33,23 +33,17 @@
         padding: 14px 16px;
         text-decoration: none;
         }
+    main article p.town-article img {
+        display: inline-flex;
+        max-width: 25em; 
+        } 
     
-    #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
-        width: 300px;
-        padding: 0;
-        margin: 0;
-        }
    #gallery1:hover, #gallery2:hover, #gallery3:hover, #gallery4:hover, #gallery5:hover, #gallery6:hover {
         border: 1px solid;
         padding: 10px;
         box-shadow: 5px 10px 8px #888888;
         }
-    
-    figcaption{
-        font-size: 14px;
-        padding: 5px;  
-        }
-    
+
     .grid-container{
         display: grid;
         grid-template-columns: auto auto auto;

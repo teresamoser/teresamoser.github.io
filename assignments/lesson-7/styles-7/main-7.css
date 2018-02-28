@@ -71,11 +71,13 @@ picture img{ width: 100%;}
 
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
     width: 350px;
-    display: block;
-    padding: 0;
-    margin: 0;
+    display: center;
     }
-
+figcaption{
+    text-align: justify;
+    max-width: 350px;
+    }
+        
 main section  {
     display: block;
     text-align: center;
