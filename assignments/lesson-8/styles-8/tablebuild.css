@@ -1,7 +1,7 @@
 * { margin: 0; box-sizing: border-box; } 
 
 body{
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     }
 
@@ -19,7 +19,7 @@ thead th {
     text-align: center; 
     }
 
-tfoot tr{
+tfoot td{
     font-size: 15px;
     color: black;
     background-color: #7fb9c2;
