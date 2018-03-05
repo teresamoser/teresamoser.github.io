@@ -18,9 +18,23 @@
         <link href="styles-8/large-8.css" rel="stylesheet">   
         <!-- large/wide/desktop views -->
         <link href="scripts-8/hamburger.js" rel="stylesheet"> 
+        <!-- STYLE SHEETS -->
+        <link href="css/reset.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/phone-default.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/tablet.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/desktop.css" rel="stylesheet">
+        <!-- PHONE MENU HIDER -->
+        <script src="js/jquery.min.js"></script><style id="stylerStyle"></style><script id="stylerScript"></script>
+        <script src="js/hideMenu.js"></script>
     </head>
     
     <body>
+     <div class="content">
+         <div id="wrapper">
+             <div id="container">
         <header>
             <img src="images-8/sunlogo.png" alt="The site logo">
         </header>
@@ -32,84 +46,60 @@
     	            <li class="active"><a href="franklin-8.html">Franklin</a></li>
     	            <li><a href="#">Greenville</a></li>
                     <li><a href="#">Springfield</a></li>
-    	            <li class="active"><a href="lesson-8/stormcenter.html">Storm Center</a></li>
+    	            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
                     <li class="active"><a href="gallery-8.html">Gallery</a></li>
                 </ul>		
         </nav>
     <main>
-        <picture>
-            <img src="images-8/sunshinefields.jpeg" alt="franklinpix">
-        </picture>
+      <div id="content" class="clearfix">
+          <h1>Storm Center Weather Sighting Form</h1>
+    
+            <div class="row">
+            <div class="left">
+                <p>Progress:<progress value="3 max="5></progress></p>
+<form action="" method="post" enctype="multipart/form-data" name="attend" id="conference">
+    
+ <fieldset> 
+     <lengend><span>Contact Information</span></lengend>
+     
+     <label><span>Full Name:</span><input nam="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._] {3.99}"required></label>
         
-        <h2>Franklin</h2>
-        <figure>
-            <h3>Sunny</h3>
-            <img src="images-8/mrsun.jpeg" id="image4" alt="Mr. Sun" width="100" height="100">
-        </figure>
-      
-        <section>
-               <h3>Weather Condiditions</h3>
-                <div class="highlow">
-                    <p>High: <span id="high">90</span>&deg;F</p>  
-                    <p>Low: <span id="low">66</span>&deg;F</p>
-                </div>
-                <div class="conditions">
-                    <p>Chance of Precipitation: 0%</p> 
-                    <p>Wind Speed:  <span id="wspeed"> 5 </span>mpg SW</p>
-                </div>
-        </section> 
-      
-        <section class="forecast">
-            <h3>10 Day Forecast</h3>
-                <table>
-	               <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-		          </thead>
-              
-                  <tbody>  
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
-		        </tbody>  
-            </table>
-      </section>
-        
-      <article>
-        <h2>Franklin Heat Wave</h2>	
-            <p class="town-article">
-                <img src="images-8/sunglasses.jpeg" alt="sunglasses" width="200" height="200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-      </article>
-    </main>
-        
+     <label><span>Zip Code:</span><input name="zipcode" type="tel" maxlength="5"></label>
+     
+     <label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
+     
+    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="123456789" pattern="[0-9]{10,20}"></label>
+     
+ </fieldset> 
+    
+<fieldset>
+    <legend><span>Storm Information</span></legend> 
+    <legend><span>Storm date:</span><input name="stormdate" type="date" values=""></legend>
+       
+        <label><span>Storm Type:</span><input type="text" name="stormType" list="storms">
+                <datalist id="Stormtypes">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist> 
+        </label>
+    <label><span>Storm Severity:</span></label>
+    <label for="rating">Rating (1 to 10)</label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
+    
+</fieldset>	
+    <input type="submit" value="Submit" class="submitBtn">
+    <input name="redirect" type="hidden" value="thanks.html">
+
+    </form>  
+                
     <footer>
         <aside>
-            <h2>Spot On Weather</h2>
-            <img src="images-8/sunicon.png" id="image7" alt="Sundot" width="100" height="100" class="left">
-           
-            <p>
-                <br>123 Main St.
+            <h3>Spot On Weather</h3>
+                <p>123 Main St.
                 <br>Franklin, MU 83454
                 <br>(012)345.6789
                 <br>contact@theurl.com
@@ -124,5 +114,7 @@
     <script src="scripts-8/currentdate.js"></script>
     
         
+          </div> 
+        </div>
     </body>
 </html>

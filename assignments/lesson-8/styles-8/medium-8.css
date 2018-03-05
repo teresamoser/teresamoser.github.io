@@ -4,9 +4,6 @@
 
     body header img { 
         display:flex;
-        max-width: 45em; 
-        margin-left: auto;
-        margin-right: auto;
         }
     
     body { 
@@ -16,13 +13,11 @@
         background-position: right top;
         background-attachment: fixed;
         }
+    
     nav button { display: none; }
     
     nav {
         background-color: #3D59AB;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
         max-width:44em;
         height: auto;
         }
@@ -47,16 +42,14 @@
         text-decoration: none;
         }
     
-   picture img{ 
+   picture img { 
         float: left;
         max-width: 500px;
         padding: 2px;   
         }
     
-    main  {
+    main {
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
         padding: 0;
         } 
     
@@ -67,25 +60,24 @@
         }
 
     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
-        width: 250px;
+        width: 350px;
         padding: 5px;
         margin: 5px;
         }
+    
     figcaption{
         text-align: justify;
-        width: 250px;
+        width: 350px;
+        margin: 5px;
         }
     
     .grid-container{
         display: grid;
-        grid-template-columns: auto auto;
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: 350px 350px;;
+        grid-gap: 50px 50px;
         }
     
     section.forecast{ 
-        margin-left: auto;
-        margin-right: auto;
         width: 44em;
         display: inline-block;
         background-color: #3D59AB;
@@ -118,34 +110,29 @@
     main article p.town-article img {
         display: flex;
         max-width: 400px;
-        margin-left: auto;
-        margin-right:auto;
         float: right;
         } 
     /* responsive images */
 
-    footer{
-        display: flex;
-        max-width: 45em;
-        margin-left: auto;
-        margin-right: auto;
-        }
+footer { 
+    display: block;
+    text-align: center;
+    }
+footer h2{
+    display: block;
+    text-align: center;
+    max-width: 400px;
+    }
 
-    footer aside img.left{
-        display: inline-flex;
-        float: left;
-        margin-right: auto;
-        margin-left: auto;
-        }
-    footer aside img.right{
-        display: inline-block;
-        float: right;
-        margin-right: auto;
-        margin-left: auto;
+footer aside {
+    margin: 0;
+    padding: 0;
     }
-    footer p{
-        display: inline-flex;
-        font-size: 16px;
-      
-    }
+
+footer>p {/* This structure refers to p elements that are direct children of the footer element */
+    text-align: center;
+    font-size: 12px;
+    } 
+
+
 }

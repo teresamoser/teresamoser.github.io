@@ -19,12 +19,13 @@
         <!-- large/wide/desktop views -->  
     </head>
     <body>
+        <div class="content">
         <header>
             <img src="images-8/sunlogo.png" alt="The site logo">
         </header>
               <!-- site navigation use placeholder references -->
-        <nav class="clearfix">
-            <button onclick="toggleNavMenu()">&#9776;</button>
+            <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
                 <ul id="navigation" class="hide">
                     <li><a href="#">Home</a></li>
     	            <li class="active"><a href="franklin-8.html">Franklin</a></li>
@@ -33,11 +34,9 @@
     	            <li><a href="#">Storm Center</a></li>
                     <li class="active"><a href="gallery-8.html">Gallery</a></li>
                 </ul>		
-        </nav>
+            </nav>
         <main>
-    
-            <div class="grid-container">
-                  
+            <div class="grid-container">     
             <figure>  
                 <div class="grid-item"><img src="images-8/sunshine.jpeg" id="gallery1" alt="Sunshine"></div>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
@@ -67,29 +66,22 @@
                 <div class="grid-item"><img src="images-8/hurricane.jpeg" id="gallery6" alt="Hurricane Andrew"></div>
                     <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
             </figure>   
-            </div>
-               
+            </div>    
         </main>
-        
             <footer>
-        <aside>
-            <h2>Spot On Weather</h2>
-            <img src="images-8/sunicon.png" id="image7" alt="Sundot" width="100" height="100" class="left">
-           
-            <p>
-                <br>123 Main St.
-                <br>Franklin, MU 83454
-                <br>(012)345.6789
-                <br>contact@theurl.com
-            </p>
-           
-        </aside>
+                <aside>
+                    <h3>Spot On Weather</h3>
+                    <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                    </p>
+                </aside>
+                <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+            </footer>
 
-        <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
-    </footer>
-
-    <script src="scripts-8/hamburger.js"></script>
-    <script src="scripts-8/currentdate.js"></script> 
-        
+            <script src="scripts-8/hamburger.js"></script>
+            <script src="scripts-8/currentdate.js"></script> 
+        </div> 
     </body>
 </html>
