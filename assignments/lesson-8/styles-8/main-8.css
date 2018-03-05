@@ -6,8 +6,20 @@ body {
     font-family: 'Josefin Sans', sans-serif,'courier new';
     font-size: 16px;
   /* Declare the base font-family - from google font api or other */
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url("blueskybackground.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    }
+
+.content{
+    max-width: 800px;
+    background-image: url("blueskybackground.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    margin:auto;
+    padding:10px;
     }
 
 body header img{
@@ -49,8 +61,8 @@ nav ul li.active a {
     }
 
 nav ul li a:hover {
-    background-color: #FFEC8B;
-    color: #3D59AB;
+    background-color: #4CAF50;
+    color: #FFEC8B;
     }
 
 nav ul.hide {display: none;}
@@ -69,28 +81,33 @@ button {
     font-size: 20px;    
     }
 
-#gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
-    width: 300px;
-    display: block;
-    }
+picture img{ width: 400px;}
 
+#gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
+    width: 350px;
+    display: center;
+    }
 figcaption{
     text-align: justify;
-    max-width: 300px;
+    max-width: 350px;
     }
         
+main section  {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
 #image4, figure {
     display: block;
     float: right;
     padding: 0;
     margin: 0;
     }
-main picture img{
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
+
 main h2 {
     font-size: 30px;
     text-align: center;
@@ -98,6 +115,8 @@ main h2 {
     margin: 10px;
     color: #008000;  
     }
+
+
 
 main .forecast { display: none; }
 
@@ -109,6 +128,7 @@ main article{
 main article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
  /* fill the page in the small/phone view */
     display: flex;
+    float: right;
     padding: 0 10px 10px 10px; 
     text-align: justify;
     width: 100%;
@@ -117,30 +137,23 @@ main article p.town-article img {  /* This structure refers to img elements that
 footer { 
     color: #FFEC8B;
     background-color: #008000;
-    max-width: 100%;
     display: inline-block;
     text-align: center;
+    max-width: 100%;
     }
-
-footer h3{
-    display: inline-flex;
+footer h2{
+    display: inline-block;
     margin: auto;
+    padding: 5px 0 5px 0;
     text-align: center;
     }
-
-footer aside img { display: none; }
-
+footer aside img.left{ display: none; }
 footer aside {
     margin: 0;
     padding: 0;
-    text-align: center; 
     }
-
-footer aside.img{ display: none; }
-
+footer aside img.right{ display: none; }
 footer>p {/* This structure refers to p elements that are direct children of the footer element */
-    margin: 5px;
-    padding: 5px;
     text-align: center;
     font-size: 12px;
     } 

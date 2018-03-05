@@ -9,7 +9,13 @@
         margin-right: auto;
         }
     
-    body { font-size: 18px; }
+    body { 
+        font-size: 18px;
+        background-image: url("skybackground.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+        }
     nav button { display: none; }
     
     nav {
