@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en-us">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <title>Franklin Current Weather | Storm Center</title>
         <meta name="author" content="Teresa Moser">
-        <meta name="Storm Center" content="Franklin City Storm Information"> 
+        <meta name="Storm Center" content="Franklin Weather Pag Storm Information"> 
         <!-- external style references in the proper cascading order -->    
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
         <!-- Google API font reference -->
@@ -29,12 +30,13 @@
         <!-- PHONE MENU HIDER -->
         <script src="js/jquery.min.js"></script><style id="stylerStyle"></style><script id="stylerScript"></script>
         <script src="js/hideMenu.js"></script>
+        <script src="scripts-8/rating.js"></script>
     </head>
     
     <body>
-     <div class="content">
-         <div id="wrapper">
-             <div id="container">
+        <div class="content">
+        <div id="wrapper">
+        <div id="container">
         <header>
             <img src="images-8/sunlogo.png" alt="The site logo">
         </header>
@@ -51,32 +53,30 @@
                 </ul>		
         </nav>
     <main>
-      <div id="content" class="clearfix">
-          <h1>Storm Center Weather Sighting Form</h1>
-    
+      <div class="clearfix">
+         <h1>Storm Sighting Report</h1>
             <div class="row">
             <div class="left">
-                <p>Progress:<progress value="3 max="5></progress></p>
-<form action="" method="post" enctype="multipart/form-data" name="attend" id="conference">
+                <p>Progress:  <progress value="1" max="9"></progress></p>
+     <form action="" method="post" enctype="multipart/form-data" name="storm" id="report">
     
- <fieldset> 
-     <lengend><span>Contact Information</span></lengend>
-     
-     <label><span>Full Name:</span><input nam="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._] {3.99}"required></label>
-        
-     <label><span>Zip Code:</span><input name="zipcode" type="tel" maxlength="5"></label>
-     
-     <label><span>Email:</span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
-     
-    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="123456789" pattern="[0-9]{10,20}"></label>
-     
- </fieldset> 
+        <fieldset> 
+            <legend><span>Contact Information</span></legend>
+            <label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="John Doe" pattern="[A-Za-z -._] {5,}"required></label>
+
+            <label><span>Email: </span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
+            
+            <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="123456789" pattern="[0-9]{10,20}"></label>
+            
+            <label><span>Zip Code: </span><input name="zipcode" type="tel" maxlength="5"></label>
+
+        </fieldset> 
     
-<fieldset>
-    <legend><span>Storm Information</span></legend> 
-    <legend><span>Storm date:</span><input name="stormdate" type="date" values=""></legend>
+        <fieldset>
+            <legend><span>Storm Conditions</span></legend> 
+            <span>Storm date: </span><input name="stormdate" type="date" values="">
        
-        <label><span>Storm Type:</span><input type="text" name="stormType" list="storms">
+            <label><span>Storm Type: </span><input type="text" name="stormType" list="Stormtypes"></label>
                 <datalist id="Stormtypes">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -84,16 +84,30 @@
                     <option value="Thunderstorm"></option>
                     <option value="Tornado"></option>
                 </datalist> 
-        </label>
-    <label><span>Storm Severity:</span></label>
-    <label for="rating">Rating (1 to 10)</label>
-		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br>
     
-</fieldset>	
-    <input type="submit" value="Submit" class="submitBtn">
-    <input name="redirect" type="hidden" value="thanks.html">
+            <label for="rating">Storm Severity (1 is least to 10 is most) </label>
+		      <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		      <span id="ratingvalue">5</span>
+           
+            <label><span>Select Region: </span></label>
+            <input type="text" name="stormregion" list="stormregion" placeholder="Franklin">
+                <datalist id="stormregion">
+                    <option value="Franklin"></option>
+                    <option value="Greenville"></option>
+                    <option value="Springfield"></option>
+                </datalist> 
 
+           <label><span>Are you in danger?  </span></label>
+                <input type="radio" name="q1" value="yes">  Yes
+                <input type="radio" name="q1" value="no">  No
+                <input type="radio" name="q1" value="maybe">  Maybe
+    
+          <label><span>Additional Information:  </span></label>
+            <textarea rows="4" cols="50" name="comments"></textarea>
+            
+        </fieldset>	
+            <input type="submit" value="Submit Report" class="submitBtn">
+            <input name="redirect" type="hidden" value="thanks.html">
     </form>  
                 
     <footer>
@@ -112,9 +126,12 @@
 
     <script src="scripts-8/hamburger.js"></script>
     <script src="scripts-8/currentdate.js"></script>
-    
-        
-          </div> 
+            </div>
+          </div>
+        </div>
+            </main>
+            </div>
+            </div>
         </div>
     </body>
 </html>

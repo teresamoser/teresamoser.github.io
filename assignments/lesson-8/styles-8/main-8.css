@@ -6,7 +6,7 @@ body {
     font-family: 'Josefin Sans', sans-serif,'courier new';
     font-size: 16px;
   /* Declare the base font-family - from google font api or other */
-    background-image: url("blueskybackground.png");
+    background-image: url('skybackground.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body {
 
 .content{
     max-width: 800px;
-    background-image: url("blueskybackground.png");
+    background-image: url('skybackground.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -56,7 +56,7 @@ nav ul li a {
     }
 
 nav ul li.active a {
-    background-color: #4CAF50;
+    background-color: #008000;
     color: #FFEC8B; 
     }
 
@@ -83,21 +83,43 @@ button {
 
 picture img{ width: 400px;}
 
+/* the following are for the Gallery page */
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
     width: 350px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
+    padding: 0;
     }
+
 figcaption{
     text-align: justify;
     max-width: 350px;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
     }
-        
+
+/* the following are for the Storm Center Page */
+label{
+    margin-right:-10px;
+
+    }
+      
+fieldset{
+    margin-bottom: 15px;
+    background-color: #ABEBC6;
+    }
+
+legend{
+    display: block;
+    color: #3377bb;
+    font-size: 30px;
+    }
+.submitBtn{
+    background-color: #ABEBC6;
+    }
+
+
+/*end of Storm Center Page*/ 
+
+
 main section  {
     display: block;
     text-align: center;
