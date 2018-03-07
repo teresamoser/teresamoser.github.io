@@ -58,11 +58,11 @@
             <div class="row">
             <div class="left">
                 <p>Progress:  <progress value="1" max="9"></progress></p>
-     <form action="" method="post" enctype="multipart/form-data" name="storm" id="report">
+     <form action="/action_page.php" method="post" enctype="multipart/form-data" name="storm" id="report">
     
         <fieldset> 
             <legend><span>Contact Information</span></legend>
-            <label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="John Doe" pattern="[A-Za-z -._] {5,}"required></label>
+            <label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="John Doe" pattern="[A-Za-z -._] {5,}" required></label>
 
             <label><span>Email: </span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
             
@@ -74,7 +74,7 @@
     
         <fieldset>
             <legend><span>Storm Conditions</span></legend> 
-            <span>Storm date: </span><input name="stormdate" type="date" values="">
+            <span>Storm date: </span><input name="stormdate" type="date">
        
             <label><span>Storm Type: </span><input type="text" name="stormType" list="Stormtypes"></label>
                 <datalist id="Stormtypes">
