@@ -6,7 +6,8 @@ body {
     font-family: 'Josefin Sans', sans-serif,'courier new';
     font-size: 16px;
   /* Declare the base font-family - from google font api or other */
-    background-image: url('skybackground.png');
+    background-image: url("skybackground.png");
+    background-color: lightgoldenrodyellow;
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -14,7 +15,8 @@ body {
 
 .content{
     max-width: 800px;
-    background-image: url('skybackground.png');
+    background-image: url("skybackground.png");
+    background-color: lightgoldenrodyellow;
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -98,22 +100,30 @@ figcaption{
 
 /* the following are for the Storm Center Page */
 label{
-    margin-right:-10px;
-
+    margin-right: 5px;
+    padding: 5px;
     }
       
 fieldset{
+    display: block;
     margin-bottom: 15px;
-    background-color: #ABEBC6;
+    background-color: lightsteelblue;
+    padding: 5px;
     }
 
 legend{
-    display: block;
+    text-align: left;
     color: #3377bb;
-    font-size: 30px;
+    font-size: 25px;
+    background-color: aliceblue;
+    box-shadow: 5px 8px 5px #888888;
+    padding: 5px;
     }
 .submitBtn{
-    background-color: #ABEBC6;
+    background-color: darkseagreen;
+    box-shadow: 5px 8px 5px #888888;
+    padding: 5px;
+    margin: 5px;
     }
 
 

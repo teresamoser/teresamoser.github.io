@@ -58,7 +58,7 @@
         padding: 0;
         margin: 0;
         }
-
+/* the following are for the gallery page*/
     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
         width: 350px;
         padding: 5px;
@@ -76,6 +76,8 @@
         grid-gap: 30px 30px;
         }
     
+    /* the following are for the storm center page form*/
+  
     section.forecast{ 
         width: 44em;
         display: inline-block;
