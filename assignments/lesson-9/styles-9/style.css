@@ -5,9 +5,11 @@ html {
 }
 
 body {
-  width: 800px;
-  margin: 0 auto;
-}
+    width: 800px;
+    margin: 0 auto;
+    background-color: steelblue;
+    color: darkred
+    }
 
 h1, h2 {
   font-family: 'Faster One', cursive;
@@ -18,6 +20,7 @@ h1, h2 {
 h1 {
   font-size: 4rem;
   text-align: center;
+    border: 5px solid darkred;
 }
 
 header p {
@@ -45,4 +48,25 @@ h2 {
   font-size: 2.5rem;
   letter-spacing: -5px;
   margin-bottom: 10px;
+}
+
+img{
+    display:inline-block;
+    padding: 20px;
+    
+}
+#moleculeman{
+    margin-left:0;
+    margin-right:30px;
+    margin-bottom: 80px;
+}
+#madameuppercut{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 160px;
+}
+#eternalflame{
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: auto;
 }
