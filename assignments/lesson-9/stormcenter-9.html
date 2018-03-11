@@ -57,26 +57,26 @@
          <h1>Storm Sighting Report</h1>
             <div class="row">
             <div class="left">
-                <p>Progress:  <progress value="1" max="9"></progress></p>
-     <form action="/action_page.php" method="post" enctype="multipart/form-data" name="storm" id="report">
+                <p>Progress: <progress value="3" max="5"></progress></p>
+     <form action="lesson-9/thanks.html" method="post" enctype="multipart/form-data" name="storm" id="report">
     
         <fieldset> 
             <legend><span>Contact Information</span></legend>
-            <label><span>Full name: </span><input name="fullname" type="text" value="" placeholder="John Doe" pattern="[A-Za-z ] {5,99}" required></label><br>
+            <label><span>&starf; Full name: </span><input name="fullname" type="text" value="" placeholder="John Doe" pattern="[A-Za-z ]{5,99}" required></label>
 
-            <br><label><span>Email: </span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label><br>
+            <label><span>&starf; Email: </span><input name="email" type="email" value="" placeholder="zen@gmail.com" required></label>
             
-           <br><label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="123456789" pattern="[0-9]{10,20}"></label><br>
+           <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="123456789" pattern="[0-9]{10,20}"></label>
             
-            <br><label><span>Zip Code: </span><input name="zipcode" type="tel" maxlength="5"></label>
+            <label><span>Zip Code: </span><input name="zipcode" type="tel" maxlength="5"></label>
 
         </fieldset> 
     
         <fieldset>
             <legend><span>Storm Conditions</span></legend> 
-            <br><label><span>Storm date: </span><input name="stormdate" type="date"></label><br>
+            <label><span>&starf; Storm date: </span><input name="stormdate" type="date" required></label>
        
-            <br><label><span>Storm Type: </span><input type="text" name="stormType" list="Stormtypes"></label><br>
+            <label><span>&starf; Storm Type: </span><input type="text" name="stormType" list="Stormtypes" required></label>
                 <datalist id="Stormtypes">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -85,24 +85,24 @@
                     <option value="Tornado"></option>
                 </datalist> 
     
-                <br><label for="rating">Storm Severity (1 is least to 10 is most) </label><br>
+                <label for="rating">Storm Severity (1 is least to 10 is most) </label>
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		              <span id="ratingvalue">5</span><br>
+		              <span id="ratingvalue">5</span>
            
-            <br><label><span>Select Region: </span></label>
+            <label><span>&starf; Select Region: </span></label>
             <input type="text" name="stormregion" list="stormregion" placeholder="Franklin">
-                <datalist id="stormregion">
+                <datalist id="stormregion" required>
                     <option value="Franklin"></option>
                     <option value="Greenville"></option>
                     <option value="Springfield"></option>
-                </datalist><br>
+                </datalist>
 
-           <br><label><span>Are you in danger?  </span></label><br>
-                <br><input type="radio" name="q1" value="yes">  Yes
+           <label><span>Are you in danger?  </span></label>
+                <input type="radio" name="q1" value="yes">  Yes
                 <input type="radio" name="q1" value="no">  No
-                <input type="radio" name="q1" value="maybe">  Maybe <br>
+                <input type="radio" name="q1" value="maybe">  Maybe 
     
-          <br><label><span>Additional Information:  </span></label><br>
+          <label><span>Additional Information:  </span></label>
             <textarea rows="5" cols="50" name="comments"></textarea>
             
         </fieldset>	
