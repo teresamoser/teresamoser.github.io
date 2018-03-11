@@ -1,0 +1,214 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: 'Josefin Sans', sans-serif,'courier new';
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+    background-image: url("skybackground.png");
+    background-color: lightgoldenrodyellow;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    }
+
+.content{
+    max-width: 800px;
+    background-image: url("skybackground.png");
+    background-color: lightgoldenrodyellow;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 10px;
+    }
+
+body header img{
+    display: inline-flex;
+    width: 100%;
+    }
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 1px;
+    }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #3D59AB;
+    text-align: center;
+    border: .5px;
+    }
+
+nav ul li {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    }
+
+nav ul li a {
+    display: block;
+    color: #4CAF50;
+    padding: 5px 8px;
+    text-decoration: none;
+    }
+
+nav ul li.active a {
+    background-color: #008000;
+    color: #FFEC8B; 
+    }
+
+nav ul li a:hover {
+    background-color: #FFEC8B;
+    color: #3D59AB;
+    }
+
+nav ul.hide {display: none;}
+
+/*---Clearfix: Force an Elenent not to collapse---*/
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+button {
+    margin: .2em 2%;
+    background-color: #008000;
+    border: none;
+    font-size: 20px;    
+    }
+
+/*main page styles*/
+
+
+#main-article{
+    display: inline-block;
+    width: 100%;
+    }
+
+#snowyroads{
+    display: flex;
+    float: right;
+    padding: 0 10px 10px 10px; 
+    text-align: justify;
+    width: 100%;
+}
+
+/*end main page*/
+
+picture img{ width: 400px;}
+
+/* the following are for the Gallery page */
+#gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
+    width: 350px;
+    display: block;
+    padding: 0;
+    }
+
+figcaption{
+    text-align: justify;
+    max-width: 350px;
+    padding: 0;
+    }
+
+/* the following are for the Storm Center Page */
+label{
+    margin-right: 5px;
+    padding: 10px;
+    }
+      
+fieldset{
+    display: block;
+    margin-bottom: 15px;
+    background-color: lightsteelblue;
+    padding: 5px;
+    }
+
+legend{
+    text-align: left;
+    color: #3377bb;
+    font-size: 25px;
+    background-color: aliceblue;
+    box-shadow: 5px 8px 5px #888888;
+    padding: 5px;
+    }
+.submitBtn{
+    background-color: darkseagreen;
+    box-shadow: 5px 8px 5px #888888;
+    padding: 5px;
+    margin: 5px;
+    }
+
+
+/*end of Storm Center Page*/ 
+
+
+main section  {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+
+#image4, figure {
+    display: block;
+    float: right;
+    padding: 0;
+    margin: 0;
+    }
+
+
+main h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: #008000;  
+    }
+
+
+
+main .forecast { display: none; }
+
+main article{
+    display: inline-block;
+    width: 100%;
+    }
+
+
+main article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+ /* fill the page in the small/phone view */
+    display: flex;
+    float: right;
+    padding: 0 10px 10px 10px; 
+    text-align: justify;
+    width: 100%;
+    }
+
+footer { 
+    color: #FFEC8B;
+    background-color: #008000;
+    display: inline-block;
+    text-align: center;
+   
+    }
+footer h2{
+    display: inline-block;
+    text-align: center;
+    }
+
+footer aside {
+    margin: 0;
+    padding: 0;
+    }
+
+footer>p {/* This structure refers to p elements that are direct children of the footer element */
+    text-align: center;
+    font-size: 12px;
+    } 
