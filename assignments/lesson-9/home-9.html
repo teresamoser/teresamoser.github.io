@@ -66,18 +66,18 @@
         <script> 
             var section = document.querySelector('section');
             
-            var requestURL= document.getElementById('townData.json');
+            var requestURL= "https://byui-cit230.github.io/weather/data/towndata.json";
             var request = new XMLHttpRequest();
             request.open('GET', requestURL);
             request.responseType = 'json';
             request.send();
             
             request.onload = function(){
-            var townData = request.response;
-                showData(towndata);         
+            var towndata = request.response;
+                showtowndata(towndata);         
             }
             
-         function showData(jsonObj) {
+         function showtowndata(jsonObj) {
             var towns = jsonObj['name'];
                 
              for (var i = 0; i < towns.length; i++){
@@ -98,7 +98,7 @@
                     myArticle.appendChild(myPara3);
                 
                     section.appendChild(myArticle);
-                }
+                    }
                
             </script>
        </div>     
