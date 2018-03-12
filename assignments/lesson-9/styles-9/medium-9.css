@@ -61,16 +61,14 @@
     
 /* the following are for the Main page*/
     
-    .home-article{
-        display: inline-flex;
-        float: left;
+   .home-article{
         text-align: left;
-        max-width: 45%;
+        max-width: 50%;
         }
 
-    #snowyroads{
-        float: right;
-        max-width: 45%;
+    #snowyroads {
+        display: inline-block;
+        max-width: 50%;
         }
 
 /* the following are for the gallery page*/

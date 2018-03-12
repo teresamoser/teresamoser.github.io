@@ -85,19 +85,16 @@ button {
 
 /*home page styles*/
 
-
 .home-article{
-    display: inline-flex;
     text-align: left;
     min-width: 350px;
-    box-shadow: 5px 8px 5px #888888;
+    box-shadow:  5px 8px 5px #888888;
     }
 
 #snowyroads{
     float: right;
-    display: inline-flex;
     padding: 0; 
-    margin: 10px;
+    margin: 8px;
     width: 350px;
     }
 
