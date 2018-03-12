@@ -63,13 +63,14 @@
     
     .home-article{
         display: inline-flex;
+        float: left;
         text-align: left;
+        max-width: 45%;
         }
 
     #snowyroads{
         float: right;
-        max-width: 500px;
-        max-height: 268px;
+        max-width: 45%;
         }
 
 /* the following are for the gallery page*/
