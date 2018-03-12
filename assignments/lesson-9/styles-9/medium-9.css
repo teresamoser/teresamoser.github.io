@@ -58,6 +58,20 @@
         padding: 0;
         margin: 0;
         }
+    
+/* the following are for the Main page*/
+    
+    .home-article{
+        display: inline-flex;
+        text-align: left;
+        }
+
+    #snowyroads{
+        float: right;
+        max-width: 500px;
+        max-height: 268px;
+        }
+
 /* the following are for the gallery page*/
     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
         width: 350px;

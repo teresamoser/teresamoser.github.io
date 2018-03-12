@@ -83,23 +83,23 @@ button {
     font-size: 20px;    
     }
 
-/*main page styles*/
+/*home page styles*/
 
 
-#main-article{
+.home-article{
     display: inline-block;
-    width: 100%;
+    text-align: left;
     }
 
 #snowyroads{
-    display: flex;
     float: right;
+    display: inline-block;
     padding: 0 10px 10px 10px; 
-    text-align: justify;
-    width: 100%;
-}
+    width: 350px;
+    }
 
-/*end main page*/
+
+/*end home page*/
 
 picture img{ width: 400px;}
 
@@ -117,6 +117,10 @@ figcaption{
     }
 
 /* the following are for the Storm Center Page */
+form {
+    max-width: auto;
+    
+}
 label{
     display: block;
     margin: .5em;
@@ -137,14 +141,15 @@ legend{
     font-size: 25px;
     background-color: aliceblue;
     box-shadow: 5px 8px 5px #888888;
-    padding: 5px;
+    padding: 10px;
     border-radius: .8em;
     border: #3377bb solid 2px;
     }
+
 .submitBtn{
     background-color: darkseagreen;
     box-shadow: 5px 8px 5px #888888;
-    padding: 5px;
+    padding:10px;
     margin: 5px;
     border-radius: .8em;
     }
