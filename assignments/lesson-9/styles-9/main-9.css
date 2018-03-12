@@ -118,7 +118,7 @@ figcaption{
 
 /* the following are for the Storm Center Page */
 form {
-    max-width: auto;
+    min-width: 780px;
     
 }
 label{
