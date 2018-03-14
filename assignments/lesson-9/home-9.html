@@ -48,24 +48,10 @@
             
       
         </section>
-    </main> 
-        <footer>
-            <aside>
-                <h3>Spot On Weather</h3>
-                <p>123 Main St.
-                    <br>Franklin, MU 83454
-                    <br>(012)345.6789
-                    <br>contact@theurl.com
-                </p>
-            </aside>
-            <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
-        </footer>
-           
-        <script src="scripts-9/hamburger.js"></script>
-        <script src="scripts-9/currentdate.js"></script>
         <script>
             
             var section = document.querySelector('section');
+            
             var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
             var request = new XMLHttpRequest();           
 
@@ -81,7 +67,8 @@
             function showData(jsonObj) {
             var towns = jsonObj['towns'];
                 
-        for (var i = 0; i < towns.length; i++){
+        for (var i = 0; i < towns.length; i++) {
+        var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
@@ -90,7 +77,7 @@
         myH2.textContent = towns[i].name;
         myPara1.textContent ='Motto: ' + towns[i].motto;
         myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        myPara3.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
+        myPara3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
         }
                     
         myArticle.appendChild(myH2);
@@ -101,8 +88,23 @@
         section.appendChild(myArticle);
         }
                
-            
-            </script>
+     </script>
+    </main> 
+        <footer>
+            <aside>
+                <h3>Spot On Weather</h3>
+                <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                </p>
+            </aside>
+            <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+        </footer>
+           
+        <script src="scripts-9/hamburger.js"></script>
+        <script src="scripts-9/currentdate.js"></script>
+        
             
        </div>     
     </body>
