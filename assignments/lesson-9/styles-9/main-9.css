@@ -81,6 +81,7 @@ button {
     font-size: 20px;    
     }
 
+
 /*home page styles*/
 
 .home-article{
@@ -93,6 +94,11 @@ button {
 #snowyroads{
     display: inline-flex;
     width: 350px;
+    }
+
+main section div img{
+    width: 350px;
+    padding: 10px;
     }
 
 .clearfix{
