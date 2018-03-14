@@ -60,17 +60,21 @@
         }
     
 /* the following are for the Main page*/
-    
-   .home-article{
-        text-align: left;
-        max-width: 50%;
-        }
-
+   
+    .home-article{
+        width: 48%;
+        float: left;
+        position: bottom;
+    } 
     #snowyroads {
-        display: flex;
-        max-width: 50%;
-        }
-
+        width: 50%;
+        float: right;   
+    }
+    
+    .clearfix{
+    clear: both;
+    }
+    
 /* the following are for the gallery page*/
     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
         width: 350px;

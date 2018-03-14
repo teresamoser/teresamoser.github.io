@@ -86,22 +86,25 @@ button {
 /*home page styles*/
 
 .home-article{
+    display: inline-flex;
     text-align: left;
-    min-width: 350px;
+    width: 350px;
     box-shadow:  5px 8px 5px #888888;
     }
 
 #snowyroads{
-    float: right;
-    padding: 0; 
-    margin: 8px;
+    display: inline-flex;
     width: 350px;
     }
+
+.clearfix{
+    clear: both;
+}
 
 
 /*end home page*/
 
-picture img{ width: 400px;}
+
 
 /* the following are for the Gallery page */
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
@@ -156,7 +159,7 @@ legend{
 
 
 /*end of Storm Center Page*/ 
-
+picture img{ width: 400px;}
 
 main section  {
     display: block;
@@ -173,6 +176,7 @@ main section  {
     margin: 0;
     }
 
+main .forecast { display: none; }
 
 main h2 {
     font-size: 30px;
@@ -181,10 +185,6 @@ main h2 {
     margin: 10px;
     color: #008000;  
     }
-
-
-
-main .forecast { display: none; }
 
 main article{
     display: inline-block;

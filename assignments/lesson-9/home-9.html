@@ -39,12 +39,13 @@
       <article>
           <h2>Weather Story</h2>
            <p class="home-article">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-            </p>
-                <img src="images-9/snowyroads.png" id="snowyroads" alt="snowy road">
-          
-      </article>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+            <img src="images-9/snowyroads.png" id="snowyroads" alt="snowy road">
+ 
+        </article>
         <section>
+            
       
         </section>
     </main> 
@@ -60,47 +61,49 @@
             <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
         </footer>
            
-            <script src="scripts-9/hamburger.js"></script>
-            <script src="scripts-9/currentdate.js"></script>
-           
-        <script> 
-            var section = document.querySelector('section');
+        <script src="scripts-9/hamburger.js"></script>
+        <script src="scripts-9/currentdate.js"></script>
+        <script>
             
-            var requestURL= "https://byui-cit230.github.io/weather/data/towndata.json";
-            var request = new XMLHttpRequest();
+            var section = document.querySelector('section');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
+            var request = new XMLHttpRequest();           
+
             request.open('GET', requestURL);
             request.responseType = 'json';
             request.send();
             
-            request.onload = function(){
+            request.onload = function () {
             var towndata = request.response;
-                showtowndata(towndata);         
+            showData(towndata);
             }
             
-         function showtowndata(jsonObj) {
-            var towns = jsonObj['name'];
+            function showData(jsonObj) {
+            var towns = jsonObj['towns'];
                 
-             for (var i = 0; i < towns.length; i++){
-                    var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
-                    var myPara1 = document.createElement('p');
-                    var myPara1 = document.createElement('p');
+        for (var i = 0; i < towns.length; i++){
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara1 = document.createElement('p');
+        var myPara1 = document.createElement('p');
                     
-                    myH2.textContent = towns[i].name;
-                    myPara1.textContent ='Motto: ' + towns[i].motto;
-                    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                    myPara3.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
-                    }
+        myH2.textContent = towns[i].name;
+        myPara1.textContent ='Motto: ' + towns[i].motto;
+        myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        myPara3.textContent = 'Average Rainfall: '+ towns[i].averageRainfall;
+        }
                     
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
                 
-                    section.appendChild(myArticle);
-                    }
+        section.appendChild(myArticle);
+        }
                
+            
             </script>
+            
        </div>     
     </body>
 </html>
