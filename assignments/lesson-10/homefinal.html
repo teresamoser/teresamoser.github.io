@@ -78,7 +78,7 @@
                 
             for (var i = 0; i < towns.length; i++) {
                 if (towns[i].name == 'Franklin' || towns[i].name == 'Greenville' || towns[i].name == 'Springfield') { 
-                var myArticle = docment.getElementById(towns[i].name);
+                var myArticle = docment.getElementById(towns[i].name).innerHTML;
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
                 var myPara2 = document.createElement('p');

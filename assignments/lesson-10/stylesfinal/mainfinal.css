@@ -176,8 +176,8 @@ main section  {
     margin: 0;
     }
 
- #partlycloudy, #partlysun{
-    display: inline-block;
+ #partlycloudy, #partlysun, figure .img{
+    float: right;
     padding: 5px;
     margin: 5px;
     width: 100px;
