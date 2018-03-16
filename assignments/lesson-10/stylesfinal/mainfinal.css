@@ -115,14 +115,15 @@ section .towninfo{
 
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
     width: 350px;
-    display: block;
-    padding: 0;
+    display: inline-flex;
+    padding: 5px;
+    margin: auto;
     }
 
 figcaption{
     text-align:justify;
-    max-width: 350px;
-    padding: 0;
+    max-width:450px;
+    padding: 5px;
     }
 
 /* the following are for the Storm Center Page */
