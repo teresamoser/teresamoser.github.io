@@ -1,0 +1,154 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+
+    body header img { 
+        display:flex;
+        }
+    
+    body { 
+        font-size: 18px;
+        }
+    
+    nav button { display: none; }
+    
+    nav {
+        background-color: #3D59AB;
+        max-width:44em;
+        height: auto;
+        }
+    nav ul.hide {display: flex;}
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3D59AB;
+        }
+    
+    nav ul li {
+        float: left;
+        }
+    
+    nav ul li a {
+        display: inline-flex;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+    
+   picture img { 
+        float: left;
+        max-width: 500px;
+        padding: 2px;   
+        }
+    
+    main {
+        text-align: center;
+        padding: 0;
+        } 
+    
+   #partlysun {
+        float: right;
+        padding: 0;
+        margin: 0;
+        width: 100px;
+        }
+    
+/* the following are for the Main page*/
+   
+    .home-article{
+        width: 48%;
+        float: left;
+        position: bottom;
+    } 
+    #snowyroads {
+        width: 50%;
+        float: right;   
+    }
+    
+    .clearfix{
+    clear: both;
+    }
+    
+/* the following are for the gallery page*/
+    #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
+        width: 350px;
+        padding: 5px;
+        margin: 5px;
+        }
+    
+    figcaption{
+        text-align: justify;
+        font-size: 14px;
+        }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 350px 350px;;
+        grid-gap: 30px 30px;
+        }
+
+    
+    /* the following are for the storm center page form*/
+  
+    section.forecast{ 
+        width: 44em;
+        display: inline-block;
+        background-color: #3D59AB;
+        text-align: center;
+        color: #FFEC8B;
+        border: .5px solid #FFEC8B; 
+        }  /* show the 10-day forecast with the medium view and up */
+    
+    table {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: inline-table;
+        border: 1px solid #FFEC8B;
+        color: #3D59AB;  
+        }
+    
+    tr, td {
+        border: 1px solid #FFEC8B;
+        background-color: #FFEC8B;
+        }
+    
+    main article, main article h2{
+         display: inline-block;
+         text-align: justify;
+         margin: 5px;
+         padding: 5px;
+        }
+
+    main article p.town-article img {
+        display: flex;
+        max-width: 400px;
+        float: right;
+        } 
+    /* responsive images */
+
+footer { 
+    display: block;
+    text-align: center;
+    }
+footer h2{
+    display: block;
+    text-align: center;
+    max-width: 400px;
+    }
+
+footer aside {
+    margin: 0;
+    padding: 0;
+    }
+
+footer>p {/* This structure refers to p elements that are direct children of the footer element */
+    text-align: center;
+    font-size: 12px;
+    } 
+
+
+}

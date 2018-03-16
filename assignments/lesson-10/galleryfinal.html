@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery of Pictures for Franklin Weather</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="Franklin Gallery page" content="Franklin City Pictures"> 
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <!-- Google API font reference -->
+        <link href="stylesfinal/normalizefinal.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="stylesfinal/mainfinal.css" rel="stylesheet">    
+        <!-- default styles - small/phone views -->
+        <link href="stylesfinal/mediumfinal.css" rel="stylesheet">  
+        <!-- medium/tablet views -->
+        <link href="stylesfinal/largefinal.css" rel="stylesheet">   
+        <!-- large/wide/desktop views -->  
+    </head>
+    <body>
+        <div class="content">
+        <header>
+            <img src="imagesfinal/sunlogo.png" alt="The site logo">
+        </header>
+              <!-- site navigation use placeholder references -->
+            <nav class="clearfix">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li class="active"><a href="homefinal.html">Home</a></li>
+    	            <li class="active"><a href="franklinfinal.html">Franklin</a></li>
+    	            <li class="active"><a href="greenvillefinal.html">Greenville</a></li>
+                    <li class="active"><a href="springfieldfinal.html">Springfield</a></li>
+    	            <li class="active"><a href="stormcenterfinal.html">Storm Center</a></li>
+                    <li class="active"><a href="galleryfinal.html">Gallery</a></li>
+                </ul>		
+            </nav>
+        <main>
+            <div class="grid-container">     
+            <figure>  
+                <div class="grid-item"><img src="imagesfinal/sunshine.jpeg" id="gallery1" alt="Sunshine"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>
+                    
+            <figure>
+                <div class="grid-item"><img src="imagesfinal/fog.jpeg" id="gallery2" alt="Foggy"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>
+                    
+            <figure>
+                <div class="grid-item"><img src="imagesfinal/lightning2.jpg" id="gallery3" alt="Lightning Storm"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>
+                
+            <figure>
+                <div class="grid-item"><img src="imagesfinal/snow.jpg" id="gallery4" alt="Snowy day"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>
+                
+            <figure>
+                <div class="grid-item"><img src="imagesfinal/rainbow.jpg" id="gallery5" alt="Rainbow"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>
+                
+            <figure>
+                <div class="grid-item"><img src="imagesfinal/hurricane.jpeg" id="gallery6" alt="Hurricane Andrew"></div>
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+            </figure>   
+            </div>    
+        </main>
+            <footer>
+                <aside>
+                    <h3>Spot On Weather</h3>
+                    <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                    </p>
+                </aside>
+                <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+            </footer>
+
+            <script src="scriptsfinal/hamburger.js"></script>
+            <script src="scriptsfinal/currentdate.js"></script> 
+        </div> 
+    </body>
+</html>

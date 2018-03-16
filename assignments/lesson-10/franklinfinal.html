@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Franklin Current Weather | 10 Day Forecast</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="Franklin Weather page" content="Franklin City Information"> 
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+        <!-- Google API font reference -->
+        <link href="stylesfinal/normalizefinal.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="stylesfinal/mainfinal.css" rel="stylesheet">    
+        <!-- default styles - small/phone views -->
+        <link href="stylesfinal/mediumfinal.css" rel="stylesheet">  
+        <!-- medium/tablet views -->
+        <link href="stylesfinal/largefinal.css" rel="stylesheet">   
+        <!-- large/wide/desktop views -->    
+    </head> 
+    <body>
+        <div class="content">
+        <header>
+            <img src="imagesfinal/sunlogo.png" alt="The site logo">
+        </header>
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li class="active"><a href="homefinal.html">Home</a></li>
+    	            <li class="active"><a href="franklinfinal.html">Franklin</a></li>
+    	            <li class="active"><a href="greenvillefinal.html">Greenville</a></li>
+                    <li class="active"><a href="springfieldfinal.html">Springfield</a></li>
+    	            <li class="active"><a href="stormcenterfinal.html">Storm Center</a></li>
+                    <li class="active"><a href="galleryfinal.html">Gallery</a></li>
+                </ul>		
+        </nav>
+    <main>
+        <picture>
+            <img src="imagesfinal/franklincity.jpeg" alt="franklinpix">
+        </picture>
+        
+        <h2>Franklin</h2>
+        <figure>
+             <img id="w_icon" src="" alt="Current Weather">
+            <!--The image icon representing the current weather from conditions.-->
+        </figure>
+      
+        <section>
+               <h3>Current Weather Conditions for <span id="place"></span></h3>
+                <div class="conditions">
+                    <p>Current Weather: <span id="cw"></span></p>
+                    <!--The current weather string, e.g., Partly Cloudy, from conditions.-->
+                    <p>Current Tempurature:  <span id="currentTemp"></span>&deg;F</p>
+                    <!--The current temperature in Fahrenheit from conditions.-->
+                    
+                    <p>Current Wind Speed:  <span id="wspeed"></span>mph</p>
+                    <!--The current wind speed in miles per hour from conditions.-->
+                    
+                    <p>Forecast: Cooler temps overnight, clear skys</p>
+                </div>
+        </section> 
+      
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+                <table>
+	               <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+		          </thead>
+              
+                  <tbody>  
+                    <tr>
+                        <td>30&deg;F</td>
+                        <td>32&deg;F</td>
+                        <td>35&deg;F</td>
+                        <td>36&deg;F</td>
+                        <td>34&deg;F</td>
+                        <td>33&deg;F</td>
+                        <td>40&deg;F</td>
+                        <td>38&deg;F</td>
+                        <td>37&deg;F</td>
+                        <td>36&deg;F</td>
+                    </tr>
+		        </tbody>  
+            </table>
+      </section>
+        
+      <article>
+        <h2>Franklin Cold Snap</h2>	
+            <p class="town-article">
+                <img src="imagesfinal/snowoncar.jpg" alt="sunglasses">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+      </article>
+    </main> 
+        <footer>
+            <aside>
+                <h3>Spot On Weather</h3>
+                <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                </p>
+            </aside>
+            <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+        </footer>
+            <script src="scriptsfinal/hamburger.js"></script>
+            <script src="scriptsfinal/currentdate.js"></script>
+            <script src="scriptsfinal/wu-weather.js"></script>
+       </div>     
+    </body>
+</html>

@@ -44,18 +44,18 @@
             <img src="images-9/snowyroads.png" id="snowyroads" alt="snowy road">
  
         </article>
-        <section>
-            <div id='Franklin'>
-                <span></span>
-                <img src='images-9/icestorm.jpeg'>
+        <section id="towndata">
+            <div>
+                <img src="images-9/icestorm.jpeg" alt="Ice Storm">
+                <span id="Franklin"></span>  
             </div>
-            <div id='Greenville'>
-                <span></span>
-                <img src='images-9/flashflood.jpeg'>
+            <div>
+                <img src="images-9/flashflood.jpeg" alt="Flash Flood">
+                <span id="Greenville"></span>  
             </div>
-            <div id='Springville'>
-                <span></span>
-                <img src='images-9/rainstorm.jpeg'>
+            <div>
+                <img src="images-9/rainstorm.jpeg" alt="Heavy Rainstorm">
+                <span id="Springfield"></span>
             </div>
             
         </section>
@@ -78,7 +78,8 @@
             var towns = jsonObj['towns'];
                 
         for (var i = 0; i < towns.length; i++) {
-        var myArticle = document.createElement('article');
+            if (towns[i].name == 'Franklin' || towns[i].name == 'Greenville' || towns[i].name == 'Springfield')
+        var myArticle = document.getElementById(towns[i].name);
         var myH2 = document.createElement('h2');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
@@ -95,7 +96,6 @@
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
                 
-        section.appendChild(myArticle);
         }
      }
      </script>

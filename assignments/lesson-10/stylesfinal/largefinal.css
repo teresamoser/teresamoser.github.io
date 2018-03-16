@@ -1,0 +1,32 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav button { display: none; }  /* hamburger button does not need to be shown */
+    
+    nav ul.hide {display: flex;}
+    
+    #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6 {
+        width: 240px;
+        }
+
+   #gallery1:hover, #gallery2:hover, #gallery3:hover, #gallery4:hover, #gallery5:hover, #gallery6:hover {
+        width: 240px;
+        border: 10px solid #3D59AB;
+        padding: 0;
+        box-shadow: 5px 10px 8px #888888;
+        }
+    figcaption{
+        text-align: left;
+        width: 240px;
+        font-size: 14px
+        }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 240px 240px 240px;
+        }
+    footer{
+        display: block;
+        max-width: 800px;
+        
+    }
+}

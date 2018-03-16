@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Greenville Current Weather | 10 Day Forecast</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="Greenville Weather page" content="Greenville Town Information"> 
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+        <!-- Google API font reference -->
+        <link href="stylesfinal/normalizefinal.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="stylesfinal/mainfinal.css" rel="stylesheet">    
+        <!-- default styles - small/phone views -->
+        <link href="stylesfinal/mediumfinal.css" rel="stylesheet">  
+        <!-- medium/tablet views -->
+        <link href="stylesfinal/largefinal.css" rel="stylesheet">   
+        <!-- large/wide/desktop views -->    
+    </head> 
+    <body>
+        <div class="content">
+        <header>
+            <img src="imagesfinal/sunlogo.png" alt="The site logo">
+        </header>
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li class="active"><a href="homefinal.html">Home</a></li>
+    	            <li class="active"><a href="franklinfinal.html">Franklin</a></li>
+    	            <li class="active"><a href="greenvillefinal.html">Greenville</a></li>
+                    <li class="active"><a href="springfieldfinal.html">Springfield</a></li>
+    	            <li class="active"><a href="stormcenterfinal.html">Storm Center</a></li>
+                    <li class="active"><a href="galleryfinal.html">Gallery</a></li>
+                </ul>		
+        </nav>
+    <main>
+        <picture>
+            <img src="imagesfinal/greenville.jpeg" alt="Greenville pix">
+        </picture>
+        
+        <h2>Greenville</h2>
+        <figure>
+            <img src="imagesfinal/sun_rain_snow.png" id="partlysun" alt="Snow showers">
+        </figure>
+      
+        <section>
+               <h3>Current Weather Conditions</h3>
+                <div class="conditions">
+                    <p>Current Weather:  Snow showers</p>
+                    <!--The current weather string, e.g., Partly Cloudy, from conditions.-->
+                    <p>Current Tempurature:  30&deg;F</p>
+                    <!--The current temperature in Fahrenheit from conditions.-->
+                    
+                    <p>Current Wind Speed:  <span id="wspeed"> 15 </span>mph</p>
+                    <!--The current wind speed in miles per hour from conditions.-->
+                  
+                    <p>Forecast:  Snow showers increasing overnight.<span id="forecast"></span></p>
+                    <!-- The text description forecast for the most current period in Fahrenheit, e.g., Partly cloudy. Lows overnight in the upper 70s.-->
+                </div>
+        </section> 
+      
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+                <table>
+	               <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+		          </thead>
+              
+                  <tbody>  
+                    <tr>
+                        <td>30&deg;F</td>
+                        <td>28&deg;F</td>
+                        <td>20&deg;F</td>
+                        <td>23&deg;F</td>
+                        <td>24&deg;F</td>
+                        <td>26&deg;F</td>
+                        <td>30&deg;F</td>
+                        <td>32&deg;F</td>
+                        <td>29&deg;F</td>
+                        <td>30&deg;F</td>
+                    </tr>
+		        </tbody>  
+            </table>
+      </section>
+        
+      <article>
+        <h2>Greenville Ice Storms</h2>	
+            <p class="town-article">
+                <img src="imagesfinal/icestorm.jpeg" alt="sunglasses">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+      </article>
+    </main> 
+        <footer>
+            <aside>
+                <h3>Spot On Weather</h3>
+                <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                </p>
+            </aside>
+            <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+        </footer>
+            <script src="scriptsfinal/hamburger.js"></script>
+            <script src="scriptsfinal/currentdate.js"></script>
+            <script src="scriptsfinal/wu-weather.js"></script>
+       </div>     
+    </body>
+</html>
