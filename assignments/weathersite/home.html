@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Home Weather Page</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="Home Weather page" content="Home Weather Information"> 
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  
+        <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   
+        <!-- large/wide/desktop views -->    
+    </head> 
+    <body>
+        <div class="content">
+        <header>
+            <img src="images/sunlogo.png" alt="The site logo">
+        </header>
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li class="active"><a href="home.html">Home</a></li>
+    	            <li class="active"><a href="franklin.html">Franklin</a></li>
+    	            <li class="active"><a href="greenville.html">Greenville</a></li>
+                    <li class="active"><a href="springfield.html">Springfield</a></li>
+    	            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                </ul>		
+        </nav>
+    <main>
+      <article>
+          <h2>Weather Story</h2>
+           <p class="home-article">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+            <img src="images/snowyroads.jpeg" id="snowyroads" alt="snowy road">
+ 
+        </article>
+        <section id="towninfo">
+            <div id="Ftown">
+                <span id="Franklin"></span> 
+                <img src="images/franklincity.jpeg" id="franklinstreets" alt="Franklin streets"> 
+            </div>
+            <div id="Gtown">
+                <span id="Greenville"></span> 
+                <img src="images/greenville.jpeg" id="greenvillestreets" alt="Greenville streets">  
+            </div>
+            <div id="Stown">
+                <span id="Springfield"></span>
+                <img src="images/Springfield.jpeg" id="springfieldstreets" alt="Springfield streets">
+            </div>
+            
+        </section>
+
+    <script>  
+        
+        var requestURL = ' https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+        var townData = request.response;
+        showData(townData);
+        }
+
+        function showData(jsonObj) {
+        var towns = jsonObj['towns'];
+        for (var i = 0; i < towns.length; i++) {
+            if (towns[i].name == 'Franklin' || towns[i].name == 'Greenville' || towns[i].name == 'Springfield') {
+        var myArticle = document.getElementById(towns[i].name);
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+       
+        myH2.textContent = towns[i].name;
+        myPara1.textContent = 'Motto:   ' + towns[i].motto;
+        myPara2.textContent = 'Year Founded:   ' + towns[i].yearFounded;
+        myPara3.textContent = 'Average Rainfall:   ' + towns[i].averageRainfall;
+        myPara4.textContent = 'Current Population:   ' + towns[i].currentPopulation;
+       
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
+
+        
+      }
+    } 
+}
+</script>    
+    </main> 
+        <footer>
+            <aside>
+                <h3>Spot On Weather</h3>
+                <p>123 Main St.
+                    <br>Franklin, MU 83454
+                    <br>(012)345.6789
+                    <br>contact@theurl.com
+                </p>
+            </aside>
+            <p class="footer-bar">&copy; 2018 All Rights Reserved    &xodot; Spot On Weather &xodot;  <span id="currentdate"></span></p>
+        </footer>
+           
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wu-weather.js"></script>
+        
+       
+       </div>     
+    </body> 
+</html>

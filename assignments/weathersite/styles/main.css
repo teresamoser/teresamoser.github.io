@@ -88,24 +88,16 @@ button {
     display: inline-flex;
     text-align: left;
     width: 350px;
-    box-shadow:  5px 8px 5px #888888;
+   
     }
 
 #snowyroads{
     display: inline-flex;
     width: 350px;
     }
-
-main section div img{
+#franklinstreets, #greenvillestreets, #springfieldstreets{
     width: 350px;
-    padding: 10px;
-    }
-section .towninfo{
-    display: inline-flex;
-    width: 350px;
-    
 }
-
 .clearfix{
     clear: both;
 }
@@ -121,8 +113,8 @@ section .towninfo{
     }
 
 figcaption{
-    text-align:justify;
-    max-width:450px;
+    text-align: justify;
+    max-width: 350px;
     padding: 5px;
     }
 
@@ -209,14 +201,10 @@ main article p.town-article img {  /* This structure refers to img elements that
     width: 100%;
     }
 
+
 footer { 
     color: #FFEC8B;
     background-color: #008000;
-    display: inline-block;
-    text-align: center;
-   
-    }
-footer h2{
     display: inline-block;
     text-align: center;
     }

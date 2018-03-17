@@ -14,7 +14,7 @@
     
     nav {
         background-color: #3D59AB;
-        max-width:44em;
+        max-width: 44em;
         height: auto;
         }
     nav ul.hide {display: flex;}
@@ -56,13 +56,39 @@
     .home-article{
         width: 48%;
         float: left;
-        position: bottom;
+        box-shadow:  5px 8px 5px #888888;
     } 
     #snowyroads {
         width: 50%;
-        float: right;   
+        float: right;    
     }
     
+#Franklin{
+    display: inline-block;
+    margin:20px;
+    width: 300px;
+    box-shadow:  5px 8px 5px #888888;
+    float: right;
+    }
+#Greenville{
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    float: left;
+    box-shadow:  5px 8px 5px #888888;
+}
+
+#Springfield{
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 5px 8px 5px #888888;
+    float: right;
+     
+}
+#franklinstreets, #greenvillestreets, #springfieldstreets{
+    width: 350px;
+}
     .clearfix{
     clear: both;
     }
@@ -123,27 +149,12 @@
         max-width: 400px;
         float: right;
         } 
+    
     /* responsive images */
 
 footer { 
-    display: block;
-    text-align: center;
+  min-width: 750px;
     }
-footer h2{
-    display: block;
-    text-align: center;
-    max-width: 400px;
-    }
-
-footer aside {
-    margin: 0;
-    padding: 0;
-    }
-
-footer>p {/* This structure refers to p elements that are direct children of the footer element */
-    text-align: center;
-    font-size: 12px;
-    } 
 
 
 }
