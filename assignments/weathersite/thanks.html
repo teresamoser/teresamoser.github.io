@@ -9,35 +9,41 @@
         <!-- external style references in the proper cascading order -->    
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
         <!-- Google API font reference -->
-        <link href="stylesfinal/normalizefinal.css" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
         <!-- normalize useragent/browser defaults -->
-        <link href="stylesfinal/mainfinal.css" rel="stylesheet">    
+        <link href="styles/main.css" rel="stylesheet">    
         <!-- default styles - small/phone views -->
-        <link href="stylesfinal/mainfinal.css" rel="stylesheet">  
+        <link href="styles/medium.css" rel="stylesheet">  
         <!-- medium/tablet views -->
-        <link href="stylesfinal/largefinal.css" rel="stylesheet">   
+        <link href="styles/large.css" rel="stylesheet">   
         <!-- large/wide/desktop views -->    
     </head> 
     <body>
         <div class="content">
         <header>
-            <img src="imagesfinal/sunlogo.png" alt="The site logo">
+            <img src="images/sunlogo.png" alt="The site logo">
         </header>
         <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
                 <ul id="navigation" class="hide">
-                    <li class="active"><a href="homefinal.html">Home</a></li>
-    	            <li class="active"><a href="franklinfinal.html">Franklin</a></li>
-    	            <li><a href="#">Greenville</a></li>
-                    <li><a href="#">Springfield</a></li>
-    	            <li class="active"><a href="stormcenterfinal.html">Storm Center</a></li>
-                    <li class="active"><a href="galleryfinal.html">Gallery</a></li>
+                    <li class="active"><a href="home.html">Home</a></li>
+    	            <li class="active"><a href="franklin.html">Franklin</a></li>
+    	            <li class="active"><a href="greenville.html">Greenville</a></li>
+                    <li class="active"><a href="springfield.html">Springfield</a></li>
+    	            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
                 </ul>		
         </nav>
         </div>
         
         <main>
-        Thank you for this vital information. We will be contacting you shortly for follow up information.  <br>Sincerely, "Spot On Weather"</main>
+            <article id="thankyou">
+               <h3>Thank you for this vital information. 
+                   <br>We will be contacting you shortly for follow up information.
+                 <br>Sincerely, 
+                   <br>"Spot On Weather"</h3> 
+            </article>
+        </main>
     </body>
 </html>

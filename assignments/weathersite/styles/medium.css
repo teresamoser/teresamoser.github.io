@@ -63,32 +63,21 @@
         float: right;    
     }
     
-#Franklin{
-    display: inline-block;
-    margin:20px;
-    width: 300px;
-    box-shadow:  5px 8px 5px #888888;
-    float: right;
+    #Franklin, #Greenville, #Springfield{
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        box-shadow:  5px 8px 5px #888888;
     }
-#Greenville{
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
-    float: left;
-    box-shadow:  5px 8px 5px #888888;
-}
-
-#Springfield{
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
-    box-shadow: 5px 8px 5px #888888;
-    float: right;
-     
-}
-#franklinstreets, #greenvillestreets, #springfieldstreets{
-    width: 350px;
-}
+    
+    #Franklin{float: right;}
+    #Greenville{float: left;}
+    #Springfield{float: right;}
+    
+    #franklinstreets, #greenvillestreets, #springfieldstreets{
+        width: 350px;
+        margin: 10px;
+        }
     .clearfix{
     clear: both;
     }

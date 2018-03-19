@@ -20,17 +20,9 @@
         <!-- large/wide/desktop views -->
         <link href="scripts/hamburger.js" rel="stylesheet"> 
         <!-- STYLE SHEETS -->
-        <link href="css/reset.css" rel="stylesheet">
-        <!-- phone-default -->
-        <link href="css/phone-default.css" rel="stylesheet">
-        <!-- enhance-tablet -->
-        <link href="css/tablet.css" rel="stylesheet">
-        <!-- enhance-desktop -->
-        <link href="css/desktop.css" rel="stylesheet">
-        <!-- PHONE MENU HIDER -->
-        <script src="js/jquery.min.js"></script><style id="stylerStyle"></style><script id="stylerScript"></script>
-        <script src="js/hideMenu.js"></script>
-        <script src="scripts/rating.js"></script>
+        <link href="scripts/rating.js" rel="stylesheet"> 
+        <!-- STYLE SHEETS -->
+
     </head>
     
     <body>
@@ -48,7 +40,7 @@
     	            <li class="active"><a href="franklin.html">Franklin</a></li>
     	            <li class="active"><a href="greenville.html">Greenville</a></li>
                     <li class="active"><a href="springfield.html">Springfield</a></li>
-    	            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	            <li class="current"><a href="stormcenter.html">Storm Center</a></li>
                     <li class="active"><a href="gallery.html">Gallery</a></li>
                 </ul>		
         </nav>
@@ -104,10 +96,15 @@
     
           <label><span>Additional Information:  </span></label>
             <textarea rows="5" cols="50" name="comments"></textarea>
-            
+    
         </fieldset>	
-            <input type="submit" value="Submit Report" class="submitBtn">
-            <input name="redirect" type="hidden" value="thanks.html">
+     <input type="submit" value="Submit Report" class="submitBtn">
+     <input name="redirect" type="hidden" value="thanks.html"> 
+         
+     <input type="reset" value="Reset Form" class="resetBtn">
+      
+ 
+
     </form>  
                 
     <footer>
@@ -126,6 +123,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/rating.js"></script> 
                 
             </div>
           </div>

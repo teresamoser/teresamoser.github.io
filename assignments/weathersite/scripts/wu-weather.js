@@ -14,7 +14,7 @@ weatherObject.onload = function () {
     document.getElementById('wspeed').innerHTML = weatherInfo.current_observation.wind_mph;
     document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
     document.getElementById('cw').innerHTML = weatherInfo.current_observation.weather;
-  
+    document.getElementById('currentF').innerHTML = weatherInfo.current_observation.forecast_url;
 } 
 
 //end of onload

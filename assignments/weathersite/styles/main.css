@@ -59,6 +59,10 @@ nav ul li.active a {
     background-color: #3D59AB;
     color: #FFEC8B; 
     }
+nav ul li.current a{
+    background-color: #4CAF50;
+    color: #FFEC8B
+}
 
 nav ul li a:hover {
     background-color: #FFEC8B;
@@ -66,6 +70,7 @@ nav ul li a:hover {
     }
 
 nav ul.hide {display: none;}
+
 
 /*---Clearfix: Force an Elenent not to collapse---*/
 .clearfix{
@@ -88,7 +93,6 @@ button {
     display: inline-flex;
     text-align: left;
     width: 350px;
-   
     }
 
 #snowyroads{
@@ -101,7 +105,10 @@ button {
 .clearfix{
     clear: both;
 }
-
+/*Franklin page*/
+#w_icon{
+    float: right;
+}
 
 /* the following are for the Gallery page */
 
@@ -149,13 +156,18 @@ legend{
     border: #3377bb solid 2px;
     }
 
-.submitBtn{
-    background-color: darkseagreen;
+.submitBtn, .resetBtn{
+    background-color: lightsteelblue;
     box-shadow: 5px 8px 5px #888888;
-    padding:10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
     border-radius: .8em;
+    border: #3377bb solid 2px;
     }
+.submitBtn{
+    background-color: darkseagreen
+}
 
 /* Main.css*/
 
@@ -200,7 +212,13 @@ main article p.town-article img {  /* This structure refers to img elements that
     text-align: justify;
     width: 100%;
     }
+/* Thanks.html page*/
 
+#thankyou{
+    text-align: center;
+    margin: 30px;
+    width: 700px;
+    }
 
 footer { 
     color: #FFEC8B;

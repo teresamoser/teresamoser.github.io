@@ -9,28 +9,33 @@
     
     .home-article{
         float: right;
-        text-align: center;
+        text-align: left;
         width: 350px;
-        margin: 10px;
+        margin: 5px;
+        margin-top: 20px;
          }
     #snowyroads{
-        width: 350px;
-        margin: 10px;
+        width: 380px;
+        margin: 5px;
+        margin-right: 20px;
         }
    #towninfo{
         display: inline-flex;
         }
     
     #franklinstreets, #greenvillestreets, #springfieldstreets{
-        width: 200px;
-        margin: 2px;
+        width: 250px;
+        margin: 4px;
         
     }
     #Franklin, #Greenville, #Springfield{
-        width: 200px;
+        width: 250px;
+        margin: 5px;
         font-size: 16px;
-    
     }
+    #Franklin{margin-right: 15px;}
+    #Greenville{margin-left: 9px;}
+    #Springfield{margin-right: 9px;}
   /*Gallery pages style*/
     
     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6 {
@@ -56,7 +61,7 @@
         } 
     
     footer{
-        max-width: 900px;
+        min-width: 800px;
         
     }
 }
