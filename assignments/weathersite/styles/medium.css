@@ -83,7 +83,13 @@
     }
     
 /* the following are for the gallery page*/
-    #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
+   
+    .grid-container{
+        display: grid;
+        grid-template-columns: 350px 350px;;
+        grid-gap: 30px 30px;
+        }
+     #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
         width: 350px;
         padding: 5px;
         margin: 5px;
@@ -94,11 +100,6 @@
         font-size: 14px;
         }
     
-    .grid-container{
-        display: grid;
-        grid-template-columns: 350px 350px;;
-        grid-gap: 30px 30px;
-        }
 
     
     /* the following are for the storm center page form*/
