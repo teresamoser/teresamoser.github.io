@@ -94,7 +94,9 @@
         padding: 5px;
         margin: 5px;
         }
-    
+    figure{
+        margin: 10px;
+    }
     figcaption{
         text-align: justify;
         font-size: 14px;

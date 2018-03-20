@@ -118,7 +118,9 @@ button {
     padding: 5px;
     margin: auto;
     }
-
+figure{
+    margin: 5px;
+}
 figcaption{
     text-align: justify;
     max-width: 350px;
@@ -181,7 +183,7 @@ main section  {
     margin: 0;
     }
 
- #partlycloudy, #partlysun, figure .img{
+ #partlycloudy, #partlysun, #wicon{
     float: right;
     padding: 5px;
     margin: 5px;
