@@ -1,7 +1,7 @@
 // JavaSript Document
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'http://api.wunderground.com/api/9d863fbb63d57795/conditions/q/MN/Franklin.json', true );
+weatherObject.open('GET', 'https://api.wunderground.com/api/9d863fbb63d57795/conditions/q/MN/Franklin.json', true );
 
 weatherObject.send();
 
