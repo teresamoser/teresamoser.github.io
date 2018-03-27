@@ -103,7 +103,7 @@
         }
     figure{
         margin: 10px;
-    }
+        }
     figcaption{
         text-align: justify;
         font-size: 14px;
@@ -154,5 +154,4 @@
     footer { 
         display: inline-block;
         min-width: 750px;
-
-}
+        }
