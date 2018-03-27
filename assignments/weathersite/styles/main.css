@@ -178,7 +178,7 @@ legend{
 
 /* Main.css*/
 
-picture img{ width: 400px;}
+picture img{width: 400px;}
 
 main section  {
     display: block;
@@ -200,8 +200,8 @@ main .forecast { display: none; }
 main h2 {
     font-size: 30px;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    padding-top: 10px;
+    margin: 2px;
     color: #008000;  
     }
 
@@ -209,7 +209,6 @@ main article{
     display: inline-block;
     width: 100%;
     }
-
 
 main article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
  /* fill the page in the small/phone view */

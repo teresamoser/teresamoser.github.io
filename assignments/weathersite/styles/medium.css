@@ -52,8 +52,9 @@
         } 
     div.conditions{
         display: block;
-        text-align: center;
-        padding: 0;     
+        text-align: left;
+        padding: 0px; 
+        max-height: 300px;
         }
     
 
