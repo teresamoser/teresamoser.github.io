@@ -51,12 +51,10 @@
 
         } 
     div.conditions{
-        display: inline-flex;
+        display: block;
         text-align: center;
-        
-        
-        
-    }
+        padding: 0;     
+        }
     
 
     
