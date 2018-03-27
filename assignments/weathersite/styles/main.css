@@ -25,12 +25,13 @@ body {
 body header img{
     display: inline-flex;
     width: 100%;
+    min-width: 400px;
     }
 
 nav {
-    display: inline-block;
+    display: inline-flex;
     width: 100%;
-    padding: 1px;
+    padding: 0;
     }
 
 nav ul {
@@ -80,6 +81,8 @@ nav ul.hide {display: none;}
     }
 
 button {
+    display: flex;
+    float: right;
     margin: .2em 2%;
     background-color: #008000;
     border: none;
@@ -106,21 +109,23 @@ button {
     clear: both;
 }
 /*Franklin page*/
-#w_icon{
+#wicon{
     float: right;
 }
 
 /* the following are for the Gallery page */
 
 #gallery1, #gallery2, #gallery3, #gallery4, #gallery5, #gallery6{
-    width: 350px;
     display: inline-flex;
+    width: 350px;
     padding: 5px;
     margin: auto;
     }
+
 figure{
     margin: 5px;
-}
+    }
+
 figcaption{
     text-align: justify;
     max-width: 350px;
@@ -131,8 +136,8 @@ figcaption{
 
 form {
     min-width: 780px;
-    
-}
+    }
+
 label{
     display: block;
     margin: .5em;
