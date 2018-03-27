@@ -51,7 +51,7 @@
 
         } 
     div.conditions{
-        display: 50%;
+        display: inline-flex;
         text-align: center;
         
         
