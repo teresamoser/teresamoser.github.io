@@ -1,0 +1,43 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    div .bicycles{ 
+        width: 313px;
+        height: 400px;
+        display: inline-flex;
+        }
+    
+    div .calltoaction{
+        width: 313px;
+        height: 400px;
+        display: inline-flex;
+        }
+    
+    div .services{
+        width: 313px;
+        height: 400px;
+        display: inline-flex;
+        }
+    
+    .bicycles img{
+        width: 250px;
+        height: 175px;
+        margin-left: 25px;
+        }
+    
+    .calltoaction img{
+        width: 250px;
+        height: 160px;
+        margin: 0;
+        }
+    
+    .services img{
+        width: 250px;
+        height: 175px;
+        margin: 0;
+        }
+    
+    footer{
+        width: 950px;
+        color: #1F2605;
+        }

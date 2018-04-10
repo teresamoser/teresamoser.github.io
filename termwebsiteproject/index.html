@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>The Mountain Spoke Bicycle Sales and Tours Website</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="The Mountain Spoke" content="Bicycle website for mountain biking, services, sales, and tours"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
+    
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">    
+        <link href="styles/medium.css" rel="stylesheet">  
+        <link href="styles/large.css" rel="stylesheet">   
+        <link href="styles/animatedMenuNav.css" rel="stylesheet">
+        
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.navigation > li').hover(function(){
+                //this code executes when the mouse pointer is over the list item
+                 $(this).addClass('openSesame');
+                    }, function(){
+                //this code executes when the mouse pointer leaves the list item
+                 $(this).removeClass('openSesame');
+                    });
+                })    
+	   </script> 
+    </head>
+    <div class="content">
+    <body>
+    
+        <header>
+            <div class="header">
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+             </div>   
+        </header>
+   
+            <nav>
+                <ul class="navigation">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="adventuretours.html">Adventure Tours</a></li>
+                    <li class="active"><a href="events.html">Events</a></li>
+                    <li class="active"><a href="bicyclesales.html">Bicycle Sales</a></li>
+    	            <li class="active"><a href="contactus.html">Contact Us</a></li>
+                    <li class="active"><a href="servicesandrepairs.html">Service and Repairs</a></li>
+                </ul>		 
+            </nav>
+    
+        <main>
+           <video autoplay loop id="video-background" muted plays-inline>
+            <source src="images/Mountain%20Bike%20-%201351.mp4" type="video/mp4">
+            </video> 
+ 
+            <div class="bicycles">
+            <section>
+                <a href="bicyclesales.html"><h1>Bicycles</h1></a><img src="images/greenbike.jpeg">
+                <p>Mountain Bicycles for Sale</p>
+            </section> 
+            </div>
+                       
+            <div class="calltoaction">
+            <section>
+            <a href="events.html"><h1>Events</h1></a><img src="images/three.jpg">
+                <p>Register here for the next Mountain Bike Tour or Event.</p>
+                 <input type="register" value="Register here" class="registerBtn"><a href="registerhere.html"></a>   
+            </section>
+            </div>
+            
+             <div class="services">  
+            <section>
+                <a href="servicesandrepairs.html"><h1>Services & Repairs</h1></a>
+              <img src="images/service.jpeg">
+                 <p>Bicycle Services & Repairs</p>  
+            </section>
+             </div> 
+            
+         </main>
+    </body>
+    <footer>
+        
+        <aside>
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h2>The Mountain Spoke</h2>
+                <p>13 E Main St
+                <br>Bozeman, MT 59715
+                <br>(012)345-6789
+                <br>TheMountainSpoke.com
+                </p>
+        </aside>
+    </footer>
+  </div>  
+</html>

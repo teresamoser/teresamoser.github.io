@@ -1,0 +1,115 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+.content{
+    max-width: 960px;
+    margin: auto;
+}
+   p {
+    font-family: 'Open Sans', sans-serif;
+    color: #D6CE15;
+    }
+  h1, h2, h3, header, title{
+     font-family: 'Cinzel Decorative', cursive;
+     color: #D6CE15;
+        }
+
+    /*video background*/
+    body {
+        margin: 0;
+        padding: 0;
+        /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+        background:#1F2605;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+
+        /* The only rule that matters */
+    #video-background {
+        /*  making the video fullscreen  */
+        position: fixed;
+        right: 0; 
+        bottom: 0px;
+        min-width: 960px; 
+        min-height: 100%;
+        width: auto; 
+        height: auto;
+        z-index: -100;
+        }
+
+ nav a{
+    color: #D6CE15;
+    }
+ .active a{
+    color: #D6CE15;
+    }
+ .current a{
+    color: #53900F;
+    }
+
+/* End of Animated Menu*/
+
+
+    /*logo image*/
+    header img{ 
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        }
+
+    header h1{
+        margin: 10px;
+        padding: 0px;
+        }
+
+    div .header{
+        display: inline-flex;
+     }
+
+    .bicycles{
+     margin-top: 170px
+    }
+ 
+    .bicycles img, .calltoaction img, .services img {
+        width: 350px;
+        height: 200px;
+        }
+
+    div .bicycles, div .calltoaction, div .services{
+        border: 5px solid #53900F;
+        text-align: center;
+        background-color: #1F2605;
+        }
+
+    section h1, .registerBtn{
+        text-align: center;
+        color: #D6CE15;
+        }
+
+    .registerBtn{
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #53900F;
+        box-shadow: 5px 8px 5px #000;
+        padding: 5px;
+        border-radius: .8em;
+        border:  #1F6521 solid 3px;
+        color: #D6CE15;
+        }
+/*Registration Form*/
+
+
+
+    footer{
+        display: inline-block;
+        border: 5px solid #53900F;
+        min-width: 400px;
+        text-align: center;
+        }
+
+  aside img{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        }

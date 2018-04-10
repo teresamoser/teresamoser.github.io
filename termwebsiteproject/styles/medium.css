@@ -1,0 +1,37 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  
+    div .bicycles , div .calltoaction{
+        width: 425px;
+        height: 400px;
+        display: inline-flex;
+        } 
+    .bicycles img{
+        margin-left: 30px;
+    }
+    .calltoaction img{
+        width: 350px;
+        height: 200px;    
+        }
+    
+    div .calltoaction{
+        height: 400px;
+        }
+    
+    .services{
+        text-align: center;
+        width: 850px; 
+       }
+    
+    .services img {
+        width: 600px;
+        }
+    
+    footer aside {
+        display: inline-block;
+        text-align: center;
+        width: 835px;
+        height: 200px;
+       }
+    
