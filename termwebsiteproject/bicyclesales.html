@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>The Mountain Spoke Bicycle Sales and Tours Website</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="The Mountain Spoke" content="Bicycle website for mountain biking, services, sales, and tours"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
+    
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">    
+        <link href="styles/medium.css" rel="stylesheet">  
+        <link href="styles/large.css" rel="stylesheet">   
+        <link href="styles/animatedMenuNav.css" rel="stylesheet">
+        
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.navigation > li').hover(function(){
+                //this code executes when the mouse pointer is over the list item
+                 $(this).addClass('openSesame');
+                    }, function(){
+                //this code executes when the mouse pointer leaves the list item
+                 $(this).removeClass('openSesame');
+                    });
+                })    
+	   </script> 
+    </head>
+ <div class="content">
+    <body>
+    
+        <header>
+            <div class="header">
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+             </div>   
+        </header>
+            <img src="images/greenbike.jpeg" id="three" alt="Green Bike">
+            
+            <nav>
+                <ul class="navigation">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="active"><a href="adventuretours.html">Adventure Tours</a></li>
+                    <li class="active"><a href="events.html">Events</a></li>
+                    <li class="current"><a href="bicyclesales.html">Bicycle Sales</a></li>
+    	            <li class="active"><a href="contactus.html">Contact Us</a></li>
+                    <li class="active"><a href="servicesandrepairs.html">Service and Repairs</a>
+                    </li>
+                 
+                </ul>		 
+            </nav>
+    
+        <main>
+        <div class="clearfix">
+                <h1>Bicycle Sales</h1>
+            </div>
+        </main>
+     </body>
+            <footer>
+        
+        <aside>
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h2>The Mountain Spoke</h2>
+                <p>13 E Main St
+                <br>Bozeman, MT 59715
+                <br>(012)345-6789
+                <br>TheMountainSpoke.com
+                </p>
+        </aside>
+          <p class="footer-bar">&copy; 2018 All Rights Reserved    &oast; The Mountain Spoke &oast;  <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+      
+  </div>  
+</html>

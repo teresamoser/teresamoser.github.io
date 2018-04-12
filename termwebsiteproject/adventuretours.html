@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>The Mountain Spoke Bicycle Sales and Tours Website</title>
+        <meta name="author" content="Teresa Moser">
+        <meta name="The Mountain Spoke" content="Bicycle website for mountain biking, services, sales, and tours"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
+    
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">    
+        <link href="styles/medium.css" rel="stylesheet">  
+        <link href="styles/large.css" rel="stylesheet">   
+        <link href="styles/animatedMenuNav.css" rel="stylesheet">
+        
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $(function(){
+                $('.navigation > li').hover(function(){
+                //this code executes when the mouse pointer is over the list item
+                 $(this).addClass('openSesame');
+                    }, function(){
+                //this code executes when the mouse pointer leaves the list item
+                 $(this).removeClass('openSesame');
+                    });
+                })    
+	   </script> 
+    </head>
+    <div class="content">
+    <body>
+    
+        <header>
+            <div class="header">
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h1>The Mountain Spoke</h1>
+             </div>   
+        </header>
+            
+            <img src="images/three.jpg" id="three" alt="three bicyclists">
+            
+            <nav>
+                <ul class="navigation">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="current"><a href="adventuretours.html">Adventure Tours</a></li>
+                    <li class="active"><a href="events.html">Events</a></li>
+                    <li class="active"><a href="bicyclesales.html">Bicycle Sales</a></li>
+    	            <li class="active"><a href="contactus.html">Contact Us</a></li>
+                    <li class="active"><a href="servicesandrepairs.html">Service and Repairs</a>
+                    </li>
+                 
+                </ul>		 
+            </nav>
+    
+        <main>
+            <div class="clearfix">
+                <h1>Adventure Tours</h1> 
+            </div>
+            
+            <div class="tourone">
+                <h2>Emerald Lake Tour</h2>
+            <p>The last stop in Hyalite Canyon area but definitely worth the drive.  This trail gives you spectacular views of a high mountain lake and surrounding cliffs that leave you in awe.  Heather Lake is another mile beyond Emerald if you are looking for a slightly longer ride.  This portion of the trail is less traveled due in part to the technical difficulty of the trail. On the flipside, you will be rewarded with a very peaceful and less visited area.  As the trail makes its way up the canyon it  will gradually become steeper and more technical.  There is about a ¾ mile stretch before you reach the last bridge that will put your legs, lungs and technical skills to the test; as you pick your way through rocks and roots along with a decent grade.  This is a great trail to help hone your technical skills.  The ride is worth the reward!  On top of having great views at the top, don’t forget the awesome downhill that awaits!
+                <br><br>Trail Difficulty: Intermediate
+                <br>Trail Length: 8.82 miles
+                <br>Skill Level: 5
+                <br>Cost: $50.00
+                 </p>
+            </div>
+               <div class="tourtwo">
+                <h2>Mountain Trail Tour</h2>
+            <p>
+                Here is a trail for the masses!  This is very popular group ride every summer!  Short and sweet uphill that ends with incredible views of the surrounding mountain ranges and a downhill that has something to offer for every ability level. The trail jumps right into a flowy single track that gets your adrenaline pumping and stoke level soaring.  As the short downhill comes to an end the trail will start to roll through dense forest and open up into a small but quaint high mountain meadow as you begin your ascent towards to top.  There are a few technical sections on the uphill that will test your bike handling skills and remind you that this is not walk in the park but rather a mountain bike adventure!  Once the you reach the summit take a minute to hike up to the rock outcropping on your right (looking east) and take in the great views.  It is all downhill from here and time to enjoy the ride!  Pay attention to others riding up and remember to give them the right-a-way (it’s a hard climb so help them out!)
+                <br><br>Trail Difficulty: Intermediate
+                <br>Trail Length: 7.05 miles
+                <br> Skill Level: 3
+                <br> Cost: $50.00
+                
+                   </p>
+            </div>
+        </main>
+        
+     </body>
+    <footer>
+        
+        <aside>
+            <img src="images/mountainspokelogo.png" alt="The site logo">
+            <h2>The Mountain Spoke</h2>
+                <p>13 E Main St
+                <br>Bozeman, MT 59715
+                <br>(012)345-6789
+                <br>TheMountainSpoke.com
+                </p>
+        </aside>
+              <p class="footer-bar">&copy; 2018 All Rights Reserved    &oast; The Mountain Spoke &oast;  <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+   
+  </div>  
+</html>

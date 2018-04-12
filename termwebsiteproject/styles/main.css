@@ -6,7 +6,7 @@
     max-width: 960px;
     margin: auto;
 }
-   p {
+   p, a {
     font-family: 'Open Sans', sans-serif;
     color: #D6CE15;
     }
@@ -16,6 +16,7 @@
         }
 
     /*video background*/
+
     body {
         margin: 0;
         padding: 0;
@@ -31,7 +32,7 @@
         position: fixed;
         right: 0; 
         bottom: 0px;
-        min-width: 960px; 
+        min-width: 100%; 
         min-height: 100%;
         width: auto; 
         height: auto;
@@ -47,9 +48,17 @@
  .current a{
     color: #53900F;
     }
+ .current{
+    border-right: 50px solid #D6CE15;
+    }
 
-/* End of Animated Menu*/
 
+/*---Clearfix: Force an Elenent not to collapse---*/
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+    }
 
     /*logo image*/
     header img{ 
@@ -65,11 +74,8 @@
 
     div .header{
         display: inline-flex;
-     }
-
-    .bicycles{
-     margin-top: 170px
-    }
+        }
+/* main page*/
  
     .bicycles img, .calltoaction img, .services img {
         width: 350px;
@@ -97,13 +103,74 @@
         border:  #1F6521 solid 3px;
         color: #D6CE15;
         }
+/*adventure tours*/
+
+
+    .tourone, .tourtwo, h1{
+        margin: 30px;
+        text-align: justify;
+        }
+   
+
 /*Registration Form*/
 
+    span, label{
+        font-family: 'Open Sans', sans-serif;
+        color: #D6CE15;
+        }
 
+    main{
+        margin-top: 200px;
+        }
+
+    form{
+        min-width: 400px;
+
+        }
+    label{
+        display: block;
+        margin: .5em;
+        padding: 10px;
+    
+        }
+
+    fieldset{
+        margin: 1.5em 5 ;
+        background-color: #53900F;
+        padding: 10px;
+        border-radius: .8em;
+        border: #1F6521 solid 3px;
+        }
+
+    legend{
+        text-align: center;
+        color: #1F6521;
+        font-size: 25px;
+        background-color: #1F6521;
+        box-shadow: 5px 8px 5px #1F2605;
+        padding: 10px;
+        border-radius: .8em;
+        border: #53900F solid 2px;
+        }
+
+    .submitBtn, .resetBtn{
+        display: inline-flex;
+        font-family: 'Open Sans', sans-serif;
+        color: #D6CE15; 
+        font-size: 20px;
+        background-color: #1F6521;
+        box-shadow: 5px 8px 5px #1F2605;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 20px;
+        border-radius: .8em;
+        border: #53900F solid 2px;
+        }
+
+    /*end of form styles*/
 
     footer{
         display: inline-block;
-        border: 5px solid #53900F;
         min-width: 400px;
         text-align: center;
         }

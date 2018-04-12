@@ -37,6 +37,23 @@
         margin: 0;
         }
     
+
+    
+    /* Registration form*/
+    
+     fieldset{
+        max-width: 400px;
+        display: inline-flex;
+        margin-left: 50px;
+        }
+    .submitBtn{
+        margin-left: 250px;
+        }
+    #foresttrail{
+        float: right;
+        }
+    
+    
     footer{
         width: 950px;
         color: #1F2605;

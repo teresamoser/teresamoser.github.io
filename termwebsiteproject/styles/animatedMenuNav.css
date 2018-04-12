@@ -19,6 +19,7 @@ body, html {
 	height: 100px;
 }
 
+
 .navigation > li {
 	position: relative;
 	background: #1F2605;
@@ -35,7 +36,6 @@ body, html {
 	     -o-transition: left 500ms;
 	        transition: left 500ms;
 }
-
 
 li.openSesame {
 	left:0px;

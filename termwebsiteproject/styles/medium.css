@@ -9,7 +9,7 @@
         } 
     .bicycles img{
         margin-left: 30px;
-    }
+        }
     .calltoaction img{
         width: 350px;
         height: 200px;    
@@ -27,6 +27,25 @@
     .services img {
         width: 600px;
         }
+    
+    #three{
+        display: inline-block;
+        min-width: 350px;
+        float: right;
+    }
+    /*registration form*/
+    
+    #foresttrail{
+        width: 500px;
+        float: right;
+        }
+    fieldset{
+        text-align: center;
+    }
+    .submitBtn{
+        margin-left: 200px;
+    }
+
     
     footer aside {
         display: inline-block;
