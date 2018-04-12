@@ -46,7 +46,9 @@
         margin-left: 200px;
     }
 
-    
+    #specs3{
+        width: 700px;
+    }
     footer aside {
         display: inline-block;
         text-align: center;

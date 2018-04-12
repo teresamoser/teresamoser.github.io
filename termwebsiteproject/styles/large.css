@@ -37,8 +37,12 @@
         margin: 0;
         }
     
+    #specs1, #specs2, #specs3{
+        width: 300px;
+        display: inline-block;
+    }
 
-    
+      
     /* Registration form*/
     
      fieldset{

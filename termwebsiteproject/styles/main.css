@@ -13,7 +13,8 @@
   h1, h2, h3, header, title{
      font-family: 'Cinzel Decorative', cursive;
      color: #D6CE15;
-        }
+      text-align: center;
+    }
 
     /*video background*/
 
@@ -76,7 +77,10 @@
         display: inline-flex;
         }
 /* main page*/
- 
+main h1{
+    text-align: center;
+    margin: 20px;
+}
     .bicycles img, .calltoaction img, .services img {
         width: 350px;
         height: 200px;
@@ -105,14 +109,13 @@
         }
 /*adventure tours*/
 
-
     .tourone, .tourtwo, h1{
         margin: 30px;
         text-align: justify;
         }
    
 
-/*Registration Form*/
+/*Events/Registration Form*/
 
     span, label{
         font-family: 'Open Sans', sans-serif;
@@ -166,13 +169,44 @@
         border-radius: .8em;
         border: #53900F solid 2px;
         }
+    #divide {
+        text-align: justify;
+        margin: 20px;
+        
+    }
 
     /*end of form styles*/
+
+/*bicycle sales*/
+    #specs1, #specs2, #specs3{
+        font-family: 'Open Sans', sans-serif;
+        color: #D6CE15;
+        font-size: 12px;
+        width: 350px;
+        border: #53900F solid 5px;
+        display: inline-block;
+        text-align:left;
+        margin: 10px;
+        }
+  
+    /*services and repairs*/
+
+    th{ 
+        font-family: 'Cinzel Decorative', cursive;
+        color: #D6CE15;
+        border: 2px solid #53900F;
+        }
+    table, td{
+        font-family: 'Open Sans', sans-serif;
+        color: #D6CE15;
+        border: 2px solid #53900F;
+        }
 
     footer{
         display: inline-block;
         min-width: 400px;
         text-align: center;
+        
         }
 
   aside img{
