@@ -58,5 +58,5 @@
     
     
     footer{
-        width: 950px;
-        color: #1F2605;}
+       min-width: 960px;
+    }

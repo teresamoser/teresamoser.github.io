@@ -49,9 +49,7 @@
     #specs3{
         width: 700px;
     }
-    footer aside {
-        display: inline-block;
-        text-align: center;
-        width: 835px;
-        height: 200px;}
+    footer{
+      min-width: 850px;
+    }
     

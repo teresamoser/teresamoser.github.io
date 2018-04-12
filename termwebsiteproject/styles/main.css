@@ -206,10 +206,9 @@ main h1{
         display: inline-block;
         min-width: 400px;
         text-align: center;
-        
         }
 
-  aside img{
+   footer img{
         width: 100px;
         height: 100px;
         margin: 5px;
